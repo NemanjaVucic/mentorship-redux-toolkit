@@ -1,26 +1,26 @@
 import { NavLink } from 'react-router-dom';
-import { theme } from '../../theme';
+import { color, font, space } from '../../variables';
 import styled from 'styled-components';
 
 export const NavigationContainer = styled.nav`
   display: flex;
-  gap: ${theme.space.x3}px;
-  border: 3px solid ${theme.color.dodgerblue};
+  gap: ${space.x3}px;
+  border: 3px solid ${color.dodgerblue};
   border-radius: 10px;
-  padding: ${theme.space.x5}px;
-  margin-top: ${theme.space.x5}px;
+  padding: ${space.x5}px;
+  margin-top: ${space.x5}px;
 `;
 export const NavLinkStyled = styled(NavLink)`
-  font-size: ${theme.font.size.medium}px;
-  font-weight: ${theme.font.weight.bold};
+  font-size: ${font.size.medium}px;
+  font-weight: ${font.weight.bold};
   text-decoration: none;
-  color: ${theme.color.dodgerblue};
+  color: ${color.dodgerblue};
   transition: 0.25s ease-in-out;
 
   &:hover,
   &.active {
     transform: scale(1.1);
-    color: ${theme.color.darkred};
+    color: ${color.darkred};
   }
 
   &:last-child {

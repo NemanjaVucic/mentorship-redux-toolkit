@@ -10,7 +10,7 @@ export type Font = Readonly<{
   }>;
 }>;
 
-const font: Font = {
+export const font: Font = {
   size: {
     base: 16,
     medium: 20,
@@ -21,5 +21,3 @@ const font: Font = {
     bold: 700,
   },
 };
-
-export default font;
