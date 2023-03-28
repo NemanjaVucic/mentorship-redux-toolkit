@@ -1,10 +1,15 @@
-import './App.css';
+import { BrowserRouter } from 'react-router-dom';
+import { Navigation } from './components/Navigation/Navigation';
+import { GlobalStyles } from './App.styled';
 
 function App() {
   return (
-    <div className="App">
-      <h2>Redux Toolkit</h2>
-    </div>
+    <>
+      <GlobalStyles />
+      <BrowserRouter>
+        <Navigation />
+      </BrowserRouter>
+    </>
   );
 }
 
