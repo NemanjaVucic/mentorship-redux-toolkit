@@ -10,4 +10,5 @@ export enum Space {
   x6 = 6 * BASE_SPACE,
   x7 = 7 * BASE_SPACE,
   x8 = 8 * BASE_SPACE,
+  x20 = 20 * BASE_SPACE,
 }

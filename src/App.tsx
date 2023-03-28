@@ -1,6 +1,6 @@
 import { BrowserRouter } from 'react-router-dom';
 import { Navigation } from './components/navigation/Navigation';
-import { GlobalStyles } from './App.styled';
+import { BodyContainer, GlobalStyles } from './App.styled';
 import PageRouter from './pages/router';
 
 function App() {
@@ -9,7 +9,9 @@ function App() {
       <GlobalStyles />
       <BrowserRouter>
         <Navigation />
-        <PageRouter />
+        <BodyContainer>
+          <PageRouter />
+        </BodyContainer>
       </BrowserRouter>
     </>
   );
