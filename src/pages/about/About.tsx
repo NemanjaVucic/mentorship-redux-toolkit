@@ -1,13 +1,6 @@
-import styled from 'styled-components';
-import { font, space } from '../../variables';
+import { Paragraph } from './About.styled';
 
 export const About = () => {
-  const Paragraph = styled.p`
-    font-weight: ${font.weight.bold};
-    max-width: 500px;
-    margin: 0 auto ${space.x4}px;
-  `;
-
   return (
     <>
       <Paragraph>
@@ -28,8 +21,6 @@ export const About = () => {
         pretium, accumsan ipsum. Nullam ultrices tellus vel consequat commodo. Curabitur tempus arcu a elit ultricies,
         vel mollis tellus port.
       </Paragraph>
-      <p></p>
-      <p></p>
     </>
   );
 };
