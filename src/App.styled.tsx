@@ -18,6 +18,6 @@ body {
 `;
 
 export const BodyContainer = styled.div`
-  margin-top: ${space.x20}px;
+  margin-top: ${space.x20};
   text-align: center;
 `;

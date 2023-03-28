@@ -1,8 +1,8 @@
 export type Font = Readonly<{
   size: Readonly<{
-    base: number;
-    medium: number;
-    large: number;
+    base: string;
+    medium: string;
+    large: string;
   }>;
   weight: Readonly<{
     regular: number;
@@ -10,14 +10,14 @@ export type Font = Readonly<{
   }>;
 }>;
 
-export const font: Font = {
+export const Font: Font = Object.freeze({
   size: {
-    base: 16,
-    medium: 20,
-    large: 24,
+    base: '16px',
+    medium: '20px',
+    large: '24px',
   },
   weight: {
     regular: 300,
     bold: 700,
   },
-};
+});
