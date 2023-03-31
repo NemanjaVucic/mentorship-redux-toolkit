@@ -10,6 +10,7 @@ export const NavigationContainer = styled.nav`
   padding: ${space.x5};
   margin-top: ${space.x5};
 `;
+
 export const NavLinkStyled = styled(NavLink)`
   font-size: ${font.size.medium};
   font-weight: ${font.weight.bold};
