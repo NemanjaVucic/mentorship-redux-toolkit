@@ -1,3 +1,8 @@
-# Redux Toolkit project
+# Redux Toolkit project (ExpressJS with React + Vite using tRPC)
 
-Redux toolkit project
+## Quick Start 🏃‍♂️
+
+```bash
+$ npm i --workspaces
+$ npm run dev
+```
