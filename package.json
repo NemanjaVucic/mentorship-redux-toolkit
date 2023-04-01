@@ -1,15 +1,13 @@
 {
-  "name": "mentorship-redux-toolkit-users",
+  "name": "mentorship-redux-toolkit",
+  "private": true,
   "version": "1.0.0",
   "description": "Project for ExpressJS with React + Vite using tRPC",
   "main": "index.js",
   "scripts": {
-    "dev": "npm run dev --workspace=client"
+    "dev": "pnpm run --parallel -r dev",
+    "test": "pnpm test -r"
   },
-  "workspaces": [
-    "./packages/server",
-    "./packages/client"
-  ],
   "keywords": [
     "ExpressJS",
     "React",

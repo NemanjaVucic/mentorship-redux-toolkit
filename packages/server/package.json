@@ -1,12 +1,13 @@
 {
-  "name": "server",
+  "name": "@mentorship-redux-toolkit/server",
+  "private": true,
   "version": "1.0.0",
   "description": "",
-  "private": true,
   "main": "./src/index.ts",
   "scripts": {
     "dev": "ts-node-dev ./src/main.ts",
-    "start": "node ./build/main.js"
+    "start": "node ./build/main.js",
+    "test": "echo \"Server test\""
   },
   "keywords": [],
   "author": "",
