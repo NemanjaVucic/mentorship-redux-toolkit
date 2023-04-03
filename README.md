@@ -1,16 +1,26 @@
 # Redux Toolkit project (ExpressJS with React + Vite using tRPC)
 
-## Quick Start 🏃‍♂️
+## Requirements ❗❗❗
 
-### temporary wi will separately build client & server
+- `NodeJS` version `16.4+`
+- `pnpm` installed globally on local machine:
 
 ```bash
-$ npm i --workspaces
-$ client: npm run dev (from root)
-$ server: npm run dev (from packages/server)
+ $ npm install -g pnpm
 ```
 
-<!-- ```bash
-$ npm i --workspaces
-$ npm run dev
-``` -->
+<br/>
+
+## Quick Start 🏃‍♂️
+
+### Install all dependencies(server & client):
+
+```bash
+$ pnpm i
+```
+
+### Bring up server & client in one go:
+
+```bash
+$ pnpm dev
+```

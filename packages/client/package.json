@@ -1,12 +1,13 @@
 {
-  "name": "client",
+  "name": "@mentorship-redux-toolkit/client",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "echo \"Client test\""
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.3",
@@ -21,7 +22,7 @@
     "styled-components": "^5.3.9",
     "superjson": "^1.12.2",
     "vite-plugin-eslint": "^1.8.1",
-    "server": "^1.0.0"
+    "@mentorship-redux-toolkit/server": "*"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
