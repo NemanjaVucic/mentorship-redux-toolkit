@@ -1,6 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit';
 
 export const store = configureStore({
+  // TODO: Fulfill this reducer
   reducer: {},
 });
 

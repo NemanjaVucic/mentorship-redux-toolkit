@@ -1,7 +1,7 @@
-import superjson from 'superjson';
+import type { AppRouter } from '@mentorship-redux-toolkit/server';
 import { createTRPCProxyClient, httpBatchLink } from '@trpc/react-query';
 import type { inferProcedureOutput } from '@trpc/server';
-import type { AppRouter } from '@mentorship-redux-toolkit/server';
+import superjson from 'superjson';
 
 export type UserList = inferProcedureOutput<AppRouter['user']['list']>;
 

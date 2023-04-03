@@ -1,4 +1,5 @@
 import styled, { createGlobalStyle } from 'styled-components';
+
 import { space } from './variables';
 
 export const GlobalStyles = createGlobalStyle`
@@ -15,9 +16,10 @@ body {
   width: 90%;
   margin: auto;
 }
+
+
 `;
 
 export const BodyContainer = styled.div`
-  margin-top: ${space.x20};
-  text-align: center;
+  margin: ${space.x8} 0;
 `;

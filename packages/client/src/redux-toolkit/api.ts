@@ -1,5 +1,6 @@
 import { createApi } from '@reduxjs/toolkit/query/react';
-import { trpc, UserList } from '../lib/trpc';
+
+import { UserList, trpc } from '../lib/trpc';
 
 export const api = createApi({
   reducerPath: 'api',

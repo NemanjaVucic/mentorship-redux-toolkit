@@ -5,7 +5,8 @@
     "plugin:@typescript-eslint/recommended",
     "prettier",
     "plugin:prettier/recommended",
-    "plugin:react-hooks/recommended"
+    "plugin:react-hooks/recommended",
+    "plugin:sort/import"
   ],
   "parserOptions": {
     "ecmaVersion": 2018,
@@ -41,7 +42,32 @@
       }
     ],
     "quote-props": [2, "as-needed"],
-    "react/react-in-jsx-scope": 0
+    "react/react-in-jsx-scope": 0,
+    "sort-imports": [2, { "ignoreCase": true, "ignoreDeclarationSort": true }],
+    // this is for sorting imports
+    "import/order": [
+      2,
+      {
+        "groups": [["external", "builtin"], "internal", ["sibling", "parent"], "index"],
+        "pathGroups": [
+          {
+            "pattern": "@(react|react-native)",
+            "group": "external",
+            "position": "before"
+          },
+          {
+            "pattern": "@src/**",
+            "group": "internal"
+          }
+        ],
+        "pathGroupsExcludedImportTypes": ["internal", "react"],
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        }
+      }
+    ]
   },
   "settings": {
     "react": {
