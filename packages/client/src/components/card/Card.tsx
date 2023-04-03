@@ -1,13 +1,15 @@
-import Button from '../button/Button';
-import { ButtonWrapper, CardBody, CardContainer, CardHeader, DeleteButton, Avatar } from './Card.styled';
 import CoverImage from '../../assets/avatar.jpg';
+import Button from '../button/Button';
+import { Avatar, ButtonWrapper, CardBody, CardContainer, CardHeader, CardInfo, DeleteButton } from './Card.styled';
 
 const Card = () => {
+  // TODO: Replace mocked data with users from  the API, Instead of using Cover Image there will be avatar from the API
+
   return (
     <CardContainer>
       <CardHeader>
-        <h3>First Name: Boris</h3>
-        <h3>Last Name: Lazarevic</h3>
+        <CardInfo>First Name: </CardInfo>
+        <CardInfo>Last Name: </CardInfo>
       </CardHeader>
       <CardBody>
         <Avatar src={CoverImage} alt="cover-image" />

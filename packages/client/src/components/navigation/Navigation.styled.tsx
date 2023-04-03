@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom';
-import { color, font, space } from '../../variables';
 import styled from 'styled-components';
+
+import { color, font, space } from '../../variables';
 
 export const NavigationContainer = styled.nav`
   display: flex;

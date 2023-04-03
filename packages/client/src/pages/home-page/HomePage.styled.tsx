@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+
 import { space } from '../../variables';
 
 export const CardWrapper = styled.div`

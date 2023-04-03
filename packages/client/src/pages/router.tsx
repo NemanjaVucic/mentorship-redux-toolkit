@@ -1,4 +1,5 @@
 import { Route, RouteProps, Routes } from 'react-router-dom';
+
 import routes from './routes';
 
 const PageRouter = () => {

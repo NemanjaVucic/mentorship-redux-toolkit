@@ -1,24 +1,26 @@
 import Card from '../../components/card/Card';
-import { api } from './../../redux-toolkit/api';
 import { CardWrapper } from './HomePage.styled';
 
+// import { api } from './../../redux-toolkit/api';
+
 export const HomePage = () => {
-  const { useGetUsersQuery } = api;
+  // TODO: Replace mocked data with users from  the API.
 
-  const { data: users, isLoading, isError } = useGetUsersQuery();
+  // const { useGetUsersQuery } = api;
 
-  if (isLoading) {
-    return <div>Loading...</div>;
-  }
+  // const { data: users, isLoading, isError } = useGetUsersQuery();
 
-  if (isError) {
-    return <div>Error</div>;
-  }
+  // if (isLoading) {
+  //   return <div>Loading...</div>;
+  // }
+
+  // if (isError) {
+  //   return <div>Error</div>;
+  // }
 
   return (
     <>
-      <h1>This is a Home page</h1>
-      {JSON.stringify(users, null, 2)}
+      {/* {JSON.stringify(users, null, 2)} */}
       <CardWrapper>
         <Card />
         <Card />

@@ -1,4 +1,5 @@
 import styled, { createGlobalStyle } from 'styled-components';
+
 import { space } from './variables';
 
 export const GlobalStyles = createGlobalStyle`

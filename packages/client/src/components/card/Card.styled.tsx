@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import { color, space } from '../../variables';
+
+import { color, font, space } from '../../variables';
 import { ButtonBaseStyles } from '../button/Button.styled';
 
 export const CardContainer = styled.div`
@@ -19,6 +20,11 @@ export const CardBody = styled.div`
   height: 0;
   padding-bottom: 56.25%; // This represents the aspect ratio of the 16:9
   position: relative;
+`;
+
+export const CardInfo = styled.div`
+  font-size: ${font.size.medium};
+  font-weight: ${font.weight.bold};
 `;
 
 export const Avatar = styled.img.attrs(({ src }) => ({
