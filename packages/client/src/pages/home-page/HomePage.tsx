@@ -1,4 +1,6 @@
+import Card from '../../components/card/Card';
 import { api } from './../../redux-toolkit/api';
+import { CardWrapper } from './HomePage.styled';
 
 export const HomePage = () => {
   const { useGetUsersQuery } = api;
@@ -17,6 +19,21 @@ export const HomePage = () => {
     <>
       <h1>This is a Home page</h1>
       {JSON.stringify(users, null, 2)}
+      <CardWrapper>
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </CardWrapper>
     </>
   );
 };

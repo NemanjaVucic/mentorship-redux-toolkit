@@ -7,7 +7,7 @@ importers:
   packages/client:
     dependencies:
       '@mentorship-redux-toolkit/server':
-        specifier: ^1.0.0
+        specifier: '*'
         version: link:../server
       '@reduxjs/toolkit':
         specifier: ^1.9.3
