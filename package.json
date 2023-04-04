@@ -1,9 +1,7 @@
 {
   "name": "mentorship-redux-toolkit",
-  "private": true,
   "version": "1.0.0",
   "description": "Project for ExpressJS with React + Vite using tRPC",
-  "main": "index.js",
   "scripts": {
     "dev": "pnpm run --parallel -r dev",
     "test": "pnpm test -r"
