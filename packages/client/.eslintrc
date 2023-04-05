@@ -7,6 +7,7 @@
     "plugin:prettier/recommended",
     "plugin:react-hooks/recommended"
   ],
+  "plugins": ["import"],
   "parserOptions": {
     "ecmaVersion": 2018,
     "sourceType": "module",
@@ -15,6 +16,13 @@
     }
   },
   "rules": {
+    "import/order": [
+      "error",
+      {
+        "groups": ["builtin", "external", "internal", "parent", "sibling", "index"],
+        "newlines-between": "always"
+      }
+    ],
     "dot-notation": 2,
     "no-const-assign": 2,
     "no-dupe-keys": 2,
