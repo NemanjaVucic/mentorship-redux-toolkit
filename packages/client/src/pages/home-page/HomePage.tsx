@@ -1,5 +1,5 @@
-import Card from '../../components/card/Card';
 import { CardWrapper } from './HomePage.styled';
+import Card from '../../components/card/Card';
 
 // import { api } from './../../redux-toolkit/api';
 
