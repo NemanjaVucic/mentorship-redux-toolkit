@@ -60,7 +60,7 @@ $ pnpm dev
 2.  [Create a new issue from the `Project Board` view](https://user-images.githubusercontent.com/16420201/229608963-f95bebc0-e702-44c0-ac80-bf787e917b6a.png)
 3.  [Create a new issue from the `Project Table` view](https://user-images.githubusercontent.com/16420201/229609106-ba8051f8-eebf-4ad9-973c-af5418a0ebb2.png)
 
-- YDuring the creation of the issue that you can set `labels`(as always), and `link to Project`, `Milestone`(where logically issue should be placed), and `linked branch` to a given [issue](https://user-images.githubusercontent.com/16420201/229610036-69392269-4332-4d37-83e9-c577b876287f.png).
+- During the creation of the issue that you can set `labels`(as always), and `link to Project`, `Milestone`(where logically issue should be placed), and `linked branch` to a given [issue](https://user-images.githubusercontent.com/16420201/229610036-69392269-4332-4d37-83e9-c577b876287f.png).
 
 ### _GitHub Projects_ 📋
 
