@@ -9,6 +9,21 @@
  $ npm install -g pnpm
 ```
 
+### _Eslint & Prettier setup_ 👀
+
+In your `VSCode settings.json(cmd + ,)` paste these commands:
+
+```json
+"editor.defaultFormatter": "esbenp.prettier-vscode",
+"editor.formatOnSave": true,
+"editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+},
+```
+
+Config file where you can improve our eslint rules is `.eslintrc`.\
+We use recommended `plugins`.\
+The most of our `rules` are from the docs, but there is some from well known plugins e.g. for [sorting the imports](https://eslint.org/docs/latest/rules/sort-imports#membersyntaxsortorder) (`eslint-plugin-import` & `eslint-plugin-sort-imports-es6-autofix`) where you can see/learn the rules on this [link](https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/order.md).
 <br/>
 
 ## Quick Start 🏃‍♂️

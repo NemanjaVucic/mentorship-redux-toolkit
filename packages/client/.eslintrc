@@ -17,9 +17,9 @@
   },
   "rules": {
     "import/order": [
-      "error",
+      2,
       {
-        "groups": ["builtin", "external", "internal", "parent", "sibling", "index"],
+        "groups": ["external", "internal", "builtin", ["parent", "sibling"], "index"],
         "newlines-between": "always"
       }
     ],
