@@ -23,7 +23,8 @@ In your `VSCode settings.json(cmd + ,)` paste these commands:
 
 Config file where you can improve our eslint rules is `.eslintrc`.\
 We use recommended `plugins`.\
-The most of our `rules` are from the docs, but there is some from well known plugins e.g. for [sorting the imports](https://eslint.org/docs/latest/rules/sort-imports#membersyntaxsortorder) (`eslint-plugin-import` & `eslint-plugin-sort-imports-es6-autofix`) where you can see/learn the rules on this [link](https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/order.md).
+The most of our `rules` are from the docs, but there is some from well known plugins e.g. for sorting the imports (`eslint-plugin-import` & `eslint-plugin-sort-imports-es6-autofix`) where you can see/learn the rules on this [link](https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/order.md).
+_Note_: do not mix rules from [`sort-imports`](https://eslint.org/docs/latest/rules/sort-imports#membersyntaxsortorder) (default eslint import sort rules) with [`eslint-plugin-import`](https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/order.md) !!!
 <br/>
 
 ## Quick Start 🏃‍♂️

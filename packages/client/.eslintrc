@@ -20,7 +20,11 @@
       2,
       {
         "groups": ["external", "internal", "builtin", ["parent", "sibling"], "index"],
-        "newlines-between": "always"
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        }
       }
     ],
     "dot-notation": 2,
