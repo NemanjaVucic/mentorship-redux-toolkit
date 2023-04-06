@@ -1,6 +1,6 @@
 # Redux Toolkit project (ExpressJS using tRPC with React + Vite )
 
-## Requirements ❗❗❗
+## **Requirements** ❗❗❗
 
 - `NodeJS` version `16.4+`
 - `pnpm` installed globally on local machine:
@@ -32,7 +32,7 @@ _`Note`_: do not mix rules from [`sort-imports`](https://eslint.org/docs/latest/
 
 <br/>
 
-## Quick Start 🏃‍♂️
+## **Quick Start** 🏃‍♂️
 
 ### Install all dependencies(server & client):
 
