@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 import { space } from '../../variables';
+
 import { ImageProps } from './Image';
 
 export const ImageWrapper = styled.div`

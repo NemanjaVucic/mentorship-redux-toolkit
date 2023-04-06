@@ -1,13 +1,7 @@
 import Button from '../button/Button';
 import Image from '../image/Image';
 
-import {
-  ButtonWrapper,
-  CardContainer,
-  CardHeader,
-  CardInfo,
-  DeleteButton,
-} from './Card.styled';
+import { ButtonWrapper, CardContainer, CardHeader, CardInfo, DeleteButton } from './Card.styled';
 
 interface CardInfoProps {
   firstName: string;

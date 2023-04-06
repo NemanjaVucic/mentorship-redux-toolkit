@@ -11,13 +11,7 @@ const Image = ({ src, alt, height, width, borderRadius }: ImageProps) => {
   return (
     <>
       <ImageWrapper>
-        <ImageBody
-          src={src}
-          alt={alt}
-          height={height}
-          width={width}
-          borderRadius={borderRadius}
-        />
+        <ImageBody src={src} alt={alt} height={height} width={width} borderRadius={borderRadius} />
       </ImageWrapper>
     </>
   );
