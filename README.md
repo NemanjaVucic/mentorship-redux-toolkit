@@ -51,8 +51,14 @@ $ pnpm dev
 ## **Project Management** 📝
 
 **TL;DR**\
-`Ticket(Card)` ➡️ `GitHub Issue` \
-`Jira Board(Trello, Asana, etc.)` ➡️ `GitHub Projects`
+`Jira Board(Trello, Asana, etc.)` ➡️ `GitHub Projects`\
+`Ticket(Card)` ➡️ `GitHub Issue`
+
+### _GitHub Projects_ 📋
+
+1. [From `Projects tab` you will enter the views(Table & Board)](https://user-images.githubusercontent.com/16420201/230123848-2abc5eef-27fc-4e02-948c-80c0c5927ee7.png)
+2. [`Board view` for tracking status of the issue](https://user-images.githubusercontent.com/16420201/230124171-8a7235f5-72e3-40e8-bd44-dccb3965d917.png)
+3. [`Table view` for verbose information about a given issue](https://user-images.githubusercontent.com/16420201/230124739-c3a863b5-975e-4d97-8fb9-28fdbe91f635.png)
 
 ### _GitHub Issue_ 🟢
 
@@ -61,9 +67,3 @@ $ pnpm dev
 3.  [Create a new issue from the `Project Table` view](https://user-images.githubusercontent.com/16420201/229609106-ba8051f8-eebf-4ad9-973c-af5418a0ebb2.png)
 
 - During the creation of the issue that you can set `labels`(as always), and `link to Project`, `Milestone`(where logically issue should be placed), and `linked branch` to a given [issue](https://user-images.githubusercontent.com/16420201/229610036-69392269-4332-4d37-83e9-c577b876287f.png).
-
-### _GitHub Projects_ 📋
-
-1. [From `Projects tab` you will enter the views(Table & Board)](https://user-images.githubusercontent.com/16420201/230123848-2abc5eef-27fc-4e02-948c-80c0c5927ee7.png)
-2. [`Board view` for tracking status of the issue](https://user-images.githubusercontent.com/16420201/230124171-8a7235f5-72e3-40e8-bd44-dccb3965d917.png)
-3. [`Table view` for verbose information about a given issue](https://user-images.githubusercontent.com/16420201/230124739-c3a863b5-975e-4d97-8fb9-28fdbe91f635.png)
