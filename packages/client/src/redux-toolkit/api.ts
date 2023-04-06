@@ -4,10 +4,13 @@ import { UserList, trpc } from '../lib/trpc';
 
 export const api = createApi({
   reducerPath: 'api',
-  baseQuery: (trpcResult: Promise<unknown>) => trpcResult.then((data) => ({ data })).catch((error) => ({ error })),
+  baseQuery: (trpcResult: Promise<unknown>) =>
+    trpcResult.then((data) => ({ data })).catch((error) => ({ error })),
   endpoints: (builder) => ({
     getUsers: builder.query<UserList, void>({
       query: trpc.user.list.query,
     }),
   }),
 });
+
+export const { useGetUsersQuery } = api;

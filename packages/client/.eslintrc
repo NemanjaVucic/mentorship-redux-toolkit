@@ -47,7 +47,7 @@
     "prefer-spread": 2,
     "prefer-template": 2,
     "prettier/prettier": [
-      "error",
+      2,
       {
         "endOfLine": "auto"
       }
