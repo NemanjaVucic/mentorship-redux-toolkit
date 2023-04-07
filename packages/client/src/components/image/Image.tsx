@@ -1,4 +1,4 @@
-import { TImage } from '../../../types/image';
+import { TImage } from '../../../types';
 
 import { ImageBody, ImageWrapper } from './Image.styled';
 

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { TImage } from '../../../types/image';
+import { TImage } from '../../../types';
 import { space } from '../../variables';
 
 export const ImageWrapper = styled.div`
