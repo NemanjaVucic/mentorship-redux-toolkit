@@ -1,10 +1,8 @@
+import { TImage } from '../../../types/image';
+
 import { ImageBody, ImageWrapper } from './Image.styled';
 
-export interface ImgProps extends React.DetailedHTMLProps<React.ImgHTMLAttributes<HTMLImageElement>, HTMLImageElement> {
-  borderRadius?: string;
-}
-
-const Image = ({ src, alt, height, width, borderRadius }: ImgProps) => {
+const Image = ({ src, alt, height, width, borderRadius }: TImage) => {
   return (
     <>
       <ImageWrapper>

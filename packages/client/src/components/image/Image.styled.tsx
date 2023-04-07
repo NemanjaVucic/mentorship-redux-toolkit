@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 
+import { TImage } from '../../../types/image';
 import { space } from '../../variables';
-
-import { ImgProps } from './Image';
 
 export const ImageWrapper = styled.div`
   margin-bottom: ${space.x3};
@@ -12,7 +11,7 @@ export const ImageWrapper = styled.div`
   position: relative;
 `;
 
-export const ImageBody = styled.img<ImgProps>`
+export const ImageBody = styled.img<TImage>`
   position: absolute;
   top: 0;
   left: 0;
