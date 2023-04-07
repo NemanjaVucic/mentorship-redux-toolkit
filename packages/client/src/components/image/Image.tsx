@@ -1,13 +1,10 @@
 import { ImageBody, ImageWrapper } from './Image.styled';
 
-export interface ImageProps {
-  src: string;
-  alt: string;
-  height?: string;
-  width?: string;
+export interface ImgProps extends React.DetailedHTMLProps<React.ImgHTMLAttributes<HTMLImageElement>, HTMLImageElement> {
   borderRadius?: string;
 }
-const Image = ({ src, alt, height, width, borderRadius }: ImageProps) => {
+
+const Image = ({ src, alt, height, width, borderRadius }: ImgProps) => {
   return (
     <>
       <ImageWrapper>

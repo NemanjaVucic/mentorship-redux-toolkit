@@ -5,12 +5,10 @@ import { ErrorImageContainer, ErrorMessage } from './Error.styled';
 
 const Error = () => {
   return (
-    <>
-      <ErrorImageContainer>
-        <ErrorMessage>The information you are trying to reach are currently unavailable...</ErrorMessage>
-        <Image src={NoContent} alt="no-content" />
-      </ErrorImageContainer>
-    </>
+    <ErrorImageContainer>
+      <ErrorMessage>The information you are trying to reach are currently unavailable...</ErrorMessage>
+      <Image src={NoContent} alt="no-content" />
+    </ErrorImageContainer>
   );
 };
 

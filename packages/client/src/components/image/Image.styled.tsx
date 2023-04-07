@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 import { space } from '../../variables';
 
-import { ImageProps } from './Image';
+import { ImgProps } from './Image';
 
 export const ImageWrapper = styled.div`
   margin-bottom: ${space.x3};
@@ -12,7 +12,7 @@ export const ImageWrapper = styled.div`
   position: relative;
 `;
 
-export const ImageBody = styled.img<ImageProps>`
+export const ImageBody = styled.img<ImgProps>`
   position: absolute;
   top: 0;
   left: 0;

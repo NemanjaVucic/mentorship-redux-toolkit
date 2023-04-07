@@ -16,7 +16,7 @@ const Card = ({ firstName, lastName, avatar }: CardInfoProps) => {
         <CardInfo>First name: {firstName}</CardInfo>
         <CardInfo>Last name: {lastName}</CardInfo>
       </CardHeader>
-      <Image src={avatar} alt="avatar" />
+      <Image src={avatar} alt={`${firstName}-${lastName}-avatar`} />
       <ButtonWrapper>
         <Button>Edit</Button>
         <DeleteButton>Delete</DeleteButton>
