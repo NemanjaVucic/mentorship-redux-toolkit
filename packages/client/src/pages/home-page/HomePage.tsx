@@ -1,40 +1,27 @@
-import { CardWrapper } from './HomePage.styled';
 import Card from '../../components/card/Card';
+import Error from '../../components/error/Error';
+import Loader from '../../components/loader/Loader';
+import { useGetUsersQuery } from '../../redux-toolkit/api';
 
-// import { api } from './../../redux-toolkit/api';
+import { CardWrapper } from './HomePage.styled';
 
 export const HomePage = () => {
-  // TODO: Replace mocked data with users from  the API.
+  const { data: users, isLoading, isError } = useGetUsersQuery();
 
-  // const { useGetUsersQuery } = api;
+  if (isLoading) {
+    return <Loader />;
+  }
 
-  // const { data: users, isLoading, isError } = useGetUsersQuery();
-
-  // if (isLoading) {
-  //   return <div>Loading...</div>;
-  // }
-
-  // if (isError) {
-  //   return <div>Error</div>;
-  // }
+  if (isError) {
+    return <Error />;
+  }
 
   return (
     <>
-      {/* {JSON.stringify(users, null, 2)} */}
       <CardWrapper>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        {users?.map((user) => (
+          <Card key={user.id} firstName={user.firstName} lastName={user.lastName} avatar={user.avatar} />
+        ))}
       </CardWrapper>
     </>
   );

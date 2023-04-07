@@ -1,8 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
 
+import { api } from './api';
+
 export const store = configureStore({
-  // TODO: Fulfill this reducer
-  reducer: {},
+  reducer: {
+    [api.reducerPath]: api.reducer,
+  },
 });
 
 // Infer the `RootState` and `AppDispatch` types from the store itself
