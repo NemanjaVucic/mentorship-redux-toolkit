@@ -1,41 +1,26 @@
-import { Card } from '@mentorship/shared-ui';
+import { Card, Loader, Error } from '@mentorship/shared-ui';
+
+import { useGetUsersQuery } from '../../redux-toolkit/api';
 
 import { CardWrapper } from './HomePage.styled';
 
-// import { api } from './../../redux-toolkit/api';
-
 export const HomePage = () => {
-  // TODO: Replace mocked data with users from  the API.
+  const { data: users, isLoading, isError } = useGetUsersQuery();
 
-  // const { useGetUsersQuery } = api;
+  if (isLoading) {
+    return <Loader />;
+  }
 
-  // const { data: users, isLoading, isError } = useGetUsersQuery();
-
-  // if (isLoading) {
-  //   return <div>Loading...</div>;
-  // }
-
-  // if (isError) {
-  //   return <div>Error</div>;
-  // }
+  if (isError) {
+    return <Error />;
+  }
 
   return (
     <>
-      {/* {JSON.stringify(users, null, 2)} */}
       <CardWrapper>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        {users?.map((user) => (
+          <Card key={user.id} firstName={user.firstName} lastName={user.lastName} avatar={user.avatar} />
+        ))}
       </CardWrapper>
     </>
   );
