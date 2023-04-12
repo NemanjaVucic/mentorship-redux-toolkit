@@ -4,7 +4,8 @@
   "description": "Project for ExpressJS with React + Vite using tRPC",
   "scripts": {
     "dev": "pnpm run --parallel -r dev",
-    "test": "pnpm test -r"
+    "test": "pnpm test -r",
+    "prisma:generate": "pnpm --filter server exec prisma generate"
   },
   "keywords": [
     "ExpressJS",

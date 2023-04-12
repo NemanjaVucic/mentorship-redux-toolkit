@@ -1,0 +1,8 @@
+{
+  "name": "@mentorship/scripts",
+  "private": true,
+  "scripts": {
+    "delete-node-modules": "node delete-node-modules.js",
+    "test": "echo \"@mentorship/node-scripts test\""
+  }
+}

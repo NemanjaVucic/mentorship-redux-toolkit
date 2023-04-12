@@ -1,0 +1,5 @@
+{
+  "ignored_files": ["**/tsconfig.json", "**/tscprc.json"],
+  "compiled_files": [],
+  "use_ts_exclude": true
+}

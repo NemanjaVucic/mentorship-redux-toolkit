@@ -1,20 +1,21 @@
-import express, { Application, NextFunction, Request, Response } from "express";
-import * as trpcExpress from "@trpc/server/adapters/express";
-import { appRouter } from "./router";
-import cors from "cors";
+import * as trpcExpress from '@trpc/server/adapters/express';
+import cors from 'cors';
+import express, { Application, Request, Response } from 'express';
+
+import { appRouter } from './router';
 
 const app: Application = express();
 app.use(cors());
 
 app.use(
-  "/trpc",
+  '/trpc',
   trpcExpress.createExpressMiddleware({
     router: appRouter,
-  })
+  }),
 );
 
-app.get("/", (req: Request, res: Response, next: NextFunction) => {
-  res.json({ message: "Hello world!" });
+app.get('/', (req: Request, res: Response) => {
+  res.json({ message: 'Hello world!' });
 });
 
 const PORT: number = Number(process.env.PORT) || 3000;
