@@ -17,12 +17,10 @@ export const HomePage = () => {
   }
 
   return (
-    <>
-      <CardWrapper>
-        {users?.map((user) => (
-          <Card key={user.id} firstName={user.firstName} lastName={user.lastName} avatar={user.avatar} />
-        ))}
-      </CardWrapper>
-    </>
+    <CardWrapper>
+      {users?.map((user) => (
+        <Card key={user.id} firstName={user.firstName} lastName={user.lastName} avatar={user.avatar} />
+      ))}
+    </CardWrapper>
   );
 };
