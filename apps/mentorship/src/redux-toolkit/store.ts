@@ -6,6 +6,7 @@ export const store = configureStore({
   reducer: {
     [api.reducerPath]: api.reducer,
   },
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware({ serializableCheck: {} }).concat(api.middleware),
 });
 
 // Infer the `RootState` and `AppDispatch` types from the store itself
