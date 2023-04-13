@@ -1,6 +1,6 @@
 import { ButtonBaseStyles } from './Button.styled';
 
-interface ButtonProps {
+export interface ButtonProps {
   children: React.ReactNode;
   onClick?: React.MouseEventHandler<HTMLButtonElement>;
 }

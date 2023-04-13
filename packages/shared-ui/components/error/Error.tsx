@@ -3,7 +3,7 @@ import { Image } from '../image/Image';
 
 import { ErrorImageContainer, ErrorMessage } from './Error.styled';
 
-const Error = () => {
+export const Error = () => {
   return (
     <ErrorImageContainer>
       <ErrorMessage>The information you are trying to reach are currently unavailable...</ErrorMessage>
@@ -11,5 +11,3 @@ const Error = () => {
     </ErrorImageContainer>
   );
 };
-
-export default Error;

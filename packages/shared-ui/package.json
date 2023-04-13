@@ -2,14 +2,12 @@
   "name": "@mentorship/shared-ui",
   "private": true,
   "description": "Shared UI where we locally implement our logic/components and provide in app",
-  "main": "dist/index.js",
+  "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "build": "tsc && tscp",
-    "delete": "npx scripts delete-node-modules",
     "test": "echo \"@mentorship/shared-ui test\""
   },
-  "keywords": [],
-  "author": "",
   "license": "ISC",
   "dependencies": {
     "react": "^18.2.0",
@@ -18,7 +16,6 @@
     "styled-components": "^5.3.9"
   },
   "devDependencies": {
-    "@mentorship/scripts": "workspace:*",
     "@types/react": "^18.0.34",
     "@types/react-dom": "^18.0.11",
     "@types/styled-components": "^5.1.26",
