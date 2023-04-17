@@ -2,20 +2,6 @@
   "name": "mentorship-redux-toolkit",
   "version": "1.0.0",
   "description": "Project for ExpressJS with React + Vite using tRPC",
-  "scripts": {
-    "dev": "pnpm run --parallel -r dev",
-    "test": "pnpm test -r",
-    "prisma:generate": "pnpm --filter server exec prisma generate",
-    "clear": "rimraf **/node_modules"
-  },
-  "keywords": [
-    "ExpressJS",
-    "React",
-    "Redux Toolkit",
-    "Vite",
-    "tRPC",
-    "typescript"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/NemanjaVucic/mentorship-redux-toolkit.git"
@@ -25,5 +11,22 @@
   "bugs": {
     "url": "https://github.com/NemanjaVucic/mentorship-redux-toolkit/issues"
   },
-  "homepage": "https://github.com/NemanjaVucic/mentorship-redux-toolkit#readme"
+  "homepage": "https://github.com/NemanjaVucic/mentorship-redux-toolkit#readme",
+  "scripts": {
+    "dev": "pnpm run --parallel -r dev",
+    "test": "pnpm test -r",
+    "prisma:generate": "pnpm --filter server exec prisma generate",
+    "clear": "rimraf **/node_modules"
+  },
+  "devDependencies": {
+    "nx": "^15.9.2"
+  },
+  "keywords": [
+    "ExpressJS",
+    "React",
+    "Redux Toolkit",
+    "Vite",
+    "tRPC",
+    "typescript"
+  ]
 }
