@@ -1,14 +1,13 @@
-import { ComponentProps, forwardRef } from 'react';
+import { ComponentPropsWithoutRef, forwardRef } from 'react';
 
 import ValidationError from '../validation-error/ValidationError';
 
 import { StyledFormControl, StyledFormInput, StyledFormLabel } from './Input.styled';
 
-export interface IInputProps extends ComponentProps<'input'> {
+export interface IInputProps extends ComponentPropsWithoutRef<'input'> {
   label: string;
 }
 
-// eslint-disable-next-line react/display-name
 const Input = forwardRef<HTMLInputElement, IInputProps>(({ label, type = 'text', ...props }, ref) => {
   return (
     <>
@@ -20,5 +19,7 @@ const Input = forwardRef<HTMLInputElement, IInputProps>(({ label, type = 'text',
     </>
   );
 });
+
+Input.displayName = 'Input';
 
 export default Input;
