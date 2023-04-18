@@ -21,9 +21,12 @@ export const ButtonBaseStyles = styled.button<ButtonProps>`
     props.border === 'dodgerBlue' ? `border: 2px solid ${color.dodgerblue}` : `border: 2px solid ${color.darkred}`};
   border-radius: 5px;
   transition: 0.25s ease-in-out;
-  ${(props) => props.align === 'start' && `justify-self: start;`}
-  ${(props) => props.align === 'center' && `justify-self: center;`}
-  ${(props) => props.align === 'end' && `justify-self: end;`}
+
+  ${(props) =>
+    props.align &&
+    `
+    justify-self: ${props.align};
+  `}
 
   &:hover {
     transform: scale(1.1);
