@@ -4,12 +4,10 @@ import { errorCasting } from '../../../utils/error-casting';
 
 import { ValidationErrorMessage } from './ValidationError.styled';
 
-const ValidationError = ({ name }: { name?: string }) => {
+const ValidationError = ({ name = '' }: { name?: string }) => {
   const {
     formState: { errors },
   } = useFormContext();
-
-  if (!name) return null;
 
   const error = errors[name];
 

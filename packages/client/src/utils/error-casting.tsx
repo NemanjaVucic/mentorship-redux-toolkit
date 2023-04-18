@@ -14,7 +14,5 @@ export const errorCasting = (
     errorMessage = error.message;
   }
 
-  errorMessage = error.message?.toString();
-
   return errorMessage;
 };

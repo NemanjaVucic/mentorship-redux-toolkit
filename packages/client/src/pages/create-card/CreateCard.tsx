@@ -1,7 +1,7 @@
 import { z } from 'zod';
 
+import Button from '../../components/button/Button';
 import Form from '../../components/form/Form';
-import FormButton from '../../components/form/form-button/FormButton';
 import { useForm } from '../../components/form/hook/useForm';
 import Input from '../../components/form/input/Input';
 
@@ -20,7 +20,7 @@ export const CreateCard = () => {
       <Form form={form} onSubmit={(values) => console.log(values)}>
         <Input label="First Name" {...form.register('firstName')} />
         <Input label="Last Name" {...form.register('lastName')} />
-        <FormButton name="Create Card" />
+        <Button align="end">Create Card</Button>
       </Form>
     </>
   );
