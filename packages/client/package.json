@@ -10,6 +10,7 @@
     "test": "echo \"Client test\""
   },
   "dependencies": {
+    "@hookform/resolvers": "^3.0.1",
     "@mentorship-redux-toolkit/server": "*",
     "@reduxjs/toolkit": "^1.9.3",
     "@tanstack/react-query": "^4.28.0",
@@ -18,11 +19,13 @@
     "@trpc/server": "^10.18.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.43.9",
     "react-redux": "^8.0.5",
     "react-router-dom": "^6.9.0",
     "styled-components": "^5.3.9",
     "superjson": "^1.12.2",
-    "vite-plugin-eslint": "^1.8.1"
+    "vite-plugin-eslint": "^1.8.1",
+    "zod": "^3.20.6"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",

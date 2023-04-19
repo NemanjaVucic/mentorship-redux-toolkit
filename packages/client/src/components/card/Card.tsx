@@ -1,7 +1,7 @@
 import Button from '../button/Button';
 import Image from '../image/Image';
 
-import { ButtonWrapper, CardContainer, CardHeader, CardInfo, DeleteButton } from './Card.styled';
+import { ButtonWrapper, CardContainer, CardHeader, CardInfo } from './Card.styled';
 
 interface CardInfoProps {
   firstName: string;
@@ -19,7 +19,9 @@ const Card = ({ firstName, lastName, avatar }: CardInfoProps) => {
       <Image src={avatar} alt={`${firstName}-${lastName}-avatar`} />
       <ButtonWrapper>
         <Button>Edit</Button>
-        <DeleteButton>Delete</DeleteButton>
+        <Button color="darkRed" border="darkRed">
+          Delete
+        </Button>
       </ButtonWrapper>
     </CardContainer>
   );
