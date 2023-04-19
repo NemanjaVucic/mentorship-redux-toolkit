@@ -8,7 +8,6 @@ const ValidationError = ({ name = '' }: { name?: string }) => {
   const {
     formState: { errors },
   } = useFormContext();
-
   const error = errors[name];
 
   if (!error) return null;

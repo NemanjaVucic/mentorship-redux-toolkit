@@ -2,9 +2,7 @@ import { ButtonBaseStyles, ButtonBaseStylesWrapper } from './Button.styled';
 
 type ColorVariant = 'darkRed' | 'dodgerBlue';
 
-export interface ButtonProps {
-  children: React.ReactNode;
-  onClick?: React.MouseEventHandler<HTMLButtonElement>;
+export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   align?: 'start' | 'center' | 'end';
   color?: ColorVariant;
   border?: ColorVariant;

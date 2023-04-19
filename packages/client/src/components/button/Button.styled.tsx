@@ -22,11 +22,7 @@ export const ButtonBaseStyles = styled.button<ButtonProps>`
   border-radius: 5px;
   transition: 0.25s ease-in-out;
 
-  ${(props) =>
-    props.align &&
-    `
-    justify-self: ${props.align};
-  `}
+  ${(props) => `justify-self: ${props.align};`}
 
   &:hover {
     transform: scale(1.1);

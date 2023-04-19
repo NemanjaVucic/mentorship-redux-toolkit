@@ -11,8 +11,8 @@ export const errorCasting = (
       const issues = error.issues.map((issue) => issue.message);
       errorMessage = issues.join('\n');
     }
-    errorMessage = error.message;
   }
+  errorMessage = error.message;
 
   return errorMessage;
 };
