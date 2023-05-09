@@ -1,5 +1,5 @@
 {
-  "name": "@mentorship/client",
+  "name": "@mentorship/users-client",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -10,7 +10,7 @@
     "test": "echo \"Client test\""
   },
   "dependencies": {
-    "@mentorship/server": "workspace:*",
+    "@mentorship/users-server": "workspace:*",
     "@mentorship/shared-ui": "workspace:*",
     "@reduxjs/toolkit": "^1.9.3",
     "@tanstack/react-query": "^4.28.0",
