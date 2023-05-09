@@ -15,7 +15,8 @@
   "scripts": {
     "dev": "pnpm run --parallel -r dev",
     "test": "pnpm test -r",
-    "prisma:generate": "pnpm --filter users-server exec prisma generate",
+    "prisma:generate": "pnpm --filter @mentorship/users-server exec prisma generate",
+    "prisma:studio": "pnpm --filter @mentorship/users-server exec prisma studio",
     "clear": "rimraf **/node_modules"
   },
   "devDependencies": {
