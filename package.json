@@ -20,7 +20,7 @@
     "clear": "rimraf **/node_modules"
   },
   "devDependencies": {
-    "nx": "^15.9.2"
+    "nx": "^16.1.3"
   },
   "keywords": [
     "ExpressJS",
