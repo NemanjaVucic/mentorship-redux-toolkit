@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { color, font, space } from '../../variables';
+import { color, font } from '../../variables';
 
 import { ButtonProps } from './Button';
 
@@ -15,7 +15,7 @@ export const ButtonBaseStyles = styled.button<ButtonProps>`
   cursor: pointer;
   font-size: ${font.size.base};
   font-weight: ${font.weight.bold};
-  padding: ${space.x3} ${space.x6};
+  ${(props) => `padding: ${props.padding}`};
   border: 2px solid ${color.dodgerblue};
   ${(props) =>
     props.border === 'dodgerBlue' ? `border: 2px solid ${color.dodgerblue}` : `border: 2px solid ${color.darkred}`};

@@ -6,15 +6,22 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
   align?: 'start' | 'center' | 'end';
   color?: ColorVariant;
   border?: ColorVariant;
+  padding?: string;
 }
 
-const Button = ({ children, onClick, align = 'start', color = 'dodgerBlue', border = 'dodgerBlue' }: ButtonProps) => {
+const Button = ({
+  children,
+  onClick,
+  align = 'start',
+  color = 'dodgerBlue',
+  border = 'dodgerBlue',
+  padding = '12px 24px',
+}: ButtonProps) => {
   return (
     <ButtonBaseStylesWrapper>
-      <ButtonBaseStyles onClick={onClick} align={align} color={color} border={border}>
+      <ButtonBaseStyles onClick={onClick} align={align} color={color} border={border} padding={padding}>
         {children}
       </ButtonBaseStyles>
-      ;
     </ButtonBaseStylesWrapper>
   );
 };
