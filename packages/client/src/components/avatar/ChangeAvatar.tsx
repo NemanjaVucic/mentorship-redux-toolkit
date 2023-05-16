@@ -1,6 +1,6 @@
 import { ComponentPropsWithoutRef, forwardRef } from 'react';
 
-import Avatar1 from '../../assets/mocks/avatar1.jpg';
+import { Avatar1 } from '../../assets/mocks';
 import { StyledFormLabel } from '../form/input/Input.styled';
 import ValidationError from '../form/validation-error/ValidationError';
 
