@@ -3,8 +3,8 @@ import styled from 'styled-components';
 import { space } from '../../../variables';
 import { StyledFormControl } from '../input/Input.styled';
 
-export const StyledTextAreaFormControl = styled(StyledFormControl)`
-  grid-template-columns: repeat(1, 1fr);
+export const StyledTextAreaFormControl = styled(StyledFormControl)<{ hasLabel: boolean }>`
+  grid-template-columns: ${({ hasLabel }) => `repeat(${hasLabel ? '2' : '1'}, 1fr)`};
 `;
 
 export const StyledFormTextArea = styled.textarea`

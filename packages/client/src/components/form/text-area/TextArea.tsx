@@ -1,6 +1,6 @@
 import { ComponentPropsWithoutRef, forwardRef } from 'react';
 
-import { StyledFormControl, StyledFormLabel } from '../input/Input.styled';
+import { StyledFormLabel } from '../input/Input.styled';
 
 import { StyledFormTextArea, StyledTextAreaFormControl } from './TextArea.styled';
 
@@ -9,14 +9,10 @@ export interface TextAreaProps extends ComponentPropsWithoutRef<'textarea'> {
 }
 
 const TextArea = forwardRef<HTMLTextAreaElement, TextAreaProps>(({ label, ...props }, ref) => {
-  return label ? (
-    <StyledFormControl>
-      <StyledFormLabel>{label}</StyledFormLabel>
-      <StyledFormTextArea ref={ref} {...props} />
-    </StyledFormControl>
-  ) : (
-    <StyledTextAreaFormControl>
-      <StyledFormLabel>{label}</StyledFormLabel>
+  const hasLabel = !!label;
+  return (
+    <StyledTextAreaFormControl hasLabel={hasLabel}>
+      {hasLabel && <StyledFormLabel>{label}</StyledFormLabel>}
       <StyledFormTextArea ref={ref} {...props} />
     </StyledTextAreaFormControl>
   );
