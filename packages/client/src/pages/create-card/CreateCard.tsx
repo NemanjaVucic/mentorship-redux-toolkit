@@ -7,11 +7,14 @@ import { useForm } from '../../components/form/hook/useForm';
 import Input from '../../components/form/input/Input';
 import TextArea from '../../components/form/text-area/TextArea';
 
+import { CreateCardButtonWrapper } from './CreateCard.styled';
+
 const createCardSchema = z.object({
   firstName: z.string().min(1, 'First Name must be at least 1 characters long!'),
   lastName: z.string().min(1, 'Last Name must be at least 1 characters long!'),
   email: z.string().email(),
-  textarea: z.string().optional(),
+  bio: z.string().optional(),
+  changeAvatar: z.string().min(1, 'You need to provide a path image!'),
 });
 
 export const CreateCard = () => {
@@ -25,9 +28,11 @@ export const CreateCard = () => {
         <Input label="First Name" {...form.register('firstName')} />
         <Input label="Last Name" {...form.register('lastName')} />
         <Input label="Email" {...form.register('email')} />
-        <TextArea {...form.register('textarea')} />
-        <ChangeAvatar />
-        <Button align="end">Create Card</Button>
+        <TextArea label="Bio" {...form.register('bio')} />
+        <ChangeAvatar {...form.register('changeAvatar')} />
+        <CreateCardButtonWrapper>
+          <Button>Create Card</Button>
+        </CreateCardButtonWrapper>
       </Form>
     </>
   );

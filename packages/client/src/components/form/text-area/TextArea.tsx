@@ -1,18 +1,20 @@
-import { TextareaHTMLAttributes, forwardRef } from 'react';
+import { ComponentPropsWithoutRef, forwardRef } from 'react';
 
 import { StyledFormControl, StyledFormLabel } from '../input/Input.styled';
 
 import { StyledFormTextArea } from './TextArea.styled';
 
-const TextArea = forwardRef<HTMLTextAreaElement, TextareaHTMLAttributes<HTMLTextAreaElement>>((props, ref) => {
-  return (
-    <>
-      <StyledFormControl>
-        <StyledFormLabel>Bio</StyledFormLabel>
-        <StyledFormTextArea ref={ref} {...props} />
-      </StyledFormControl>
-    </>
-  );
+export interface TextAreaProps extends ComponentPropsWithoutRef<'textarea'> {
+  label?: string;
+}
+
+const TextArea = forwardRef<HTMLTextAreaElement, TextAreaProps>(({ label, ...props }, ref) => {
+  return label ? (
+    <StyledFormControl>
+      <StyledFormLabel>{label}</StyledFormLabel>
+      <StyledFormTextArea ref={ref} {...props} />
+    </StyledFormControl>
+  ) : null;
 });
 
 TextArea.displayName = 'TextArea';

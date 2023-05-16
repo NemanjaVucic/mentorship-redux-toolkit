@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
-import { space } from '../../variables';
-import { StyledFormControl } from '../form/input/Input.styled';
+import { color, space } from '../../variables';
+import { ButtonBaseStyles } from '../button/Button.styled';
+import { StyledFormControl, StyledFormInput } from '../form/input/Input.styled';
 
 export const ChangeAvatarWrapper = styled(StyledFormControl)`
   grid-template-columns: repeat(3, 1fr);
@@ -17,4 +18,14 @@ export const ChangeAvatarBox = styled.div`
     transform: scale(1.6);
     cursor: pointer;
   }
+`;
+
+export const ChangeAvatarInputStyled = styled(StyledFormInput)`
+  padding: 0;
+  width: 100%;
+  border: 2px solid ${color.dodgerblue};
+`;
+
+export const ChangeAvatarButton = styled(ButtonBaseStyles)`
+  padding: ${space.x2};
 `;

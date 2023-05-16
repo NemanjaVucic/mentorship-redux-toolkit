@@ -1,20 +1,31 @@
+import { ComponentPropsWithoutRef, forwardRef } from 'react';
+
 import Avatar1 from '../../assets/mocks/avatar1.jpg';
-import Button from '../button/Button';
 import { StyledFormLabel } from '../form/input/Input.styled';
-import Image from '../image/Image';
+import ValidationError from '../form/validation-error/ValidationError';
 
-import { ChangeAvatarBox, ChangeAvatarWrapper } from './ChangeAvatar.styled';
+import {
+  ChangeAvatarBox,
+  ChangeAvatarButton,
+  ChangeAvatarInputStyled,
+  ChangeAvatarWrapper,
+} from './ChangeAvatar.styled';
 
-const ChangeAvatar = () => {
+const ChangeAvatar = forwardRef<HTMLInputElement, ComponentPropsWithoutRef<'input'>>((props, ref) => {
   return (
-    <ChangeAvatarWrapper>
-      <StyledFormLabel>Avatar</StyledFormLabel>
-      <ChangeAvatarBox>
-        <Image src={Avatar1} height="45px" width="45px" />
-      </ChangeAvatarBox>
-      <Button padding="8px">Change avatar</Button>
-    </ChangeAvatarWrapper>
+    <>
+      <ChangeAvatarWrapper>
+        <StyledFormLabel>Avatar</StyledFormLabel>
+        <ChangeAvatarBox>
+          <ChangeAvatarInputStyled type="image" name={props.name} src={Avatar1} ref={ref} value={Avatar1} {...props} />
+        </ChangeAvatarBox>
+        <ChangeAvatarButton>Change avatar</ChangeAvatarButton>
+      </ChangeAvatarWrapper>
+      <ValidationError name={props.name} />
+    </>
   );
-};
+});
+
+ChangeAvatar.displayName = 'ChangeAvatar';
 
 export default ChangeAvatar;
