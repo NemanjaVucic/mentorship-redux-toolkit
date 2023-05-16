@@ -19,7 +19,7 @@ export const CardInfo = styled.div`
   font-weight: ${font.weight.bold};
 `;
 
-export const ButtonWrapper = styled.div`
+export const CardButtonWrapper = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-around;
