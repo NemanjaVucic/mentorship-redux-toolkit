@@ -1,4 +1,5 @@
-import { ComponentPropsWithoutRef, forwardRef } from 'react';
+import { ComponentPropsWithoutRef, forwardRef, useState } from 'react';
+import { createPortal } from 'react-dom';
 
 import { Avatar1 } from '../../assets/mocks';
 import { StyledFormLabel } from '../input/Input.styled';
@@ -10,8 +11,11 @@ import {
   ChangeAvatarInputStyled,
   ChangeAvatarWrapper,
 } from './ChangeAvatar.styled';
+import AvatarModal from '../avatar-modal/AvatarModal';
 
-export const ChangeAvatar = forwardRef<HTMLInputElement, ComponentPropsWithoutRef<'input'>>((props, ref) => {
+const ChangeAvatar = forwardRef<HTMLInputElement, ComponentPropsWithoutRef<'input'>>((props, ref) => {
+  const [showModal, setShowModal] = useState(false);
+
   return (
     <>
       <ChangeAvatarWrapper>
@@ -19,7 +23,10 @@ export const ChangeAvatar = forwardRef<HTMLInputElement, ComponentPropsWithoutRe
         <ChangeAvatarBox>
           <ChangeAvatarInputStyled type="image" name={props.name} src={Avatar1} ref={ref} value={Avatar1} {...props} />
         </ChangeAvatarBox>
-        <ChangeAvatarButton>Change avatar</ChangeAvatarButton>
+        <ChangeAvatarButton type="button" onClick={() => setShowModal(true)}>
+          Change avatar
+        </ChangeAvatarButton>
+        {showModal && createPortal(<AvatarModal closeModal={() => setShowModal(false)} />, document.body)}
       </ChangeAvatarWrapper>
       <ValidationError name={props.name} />
     </>
