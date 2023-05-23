@@ -1,12 +1,11 @@
 {
-  "extends": "nx/presets/npm.json",
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "tasksRunnerOptions": {
     "default": {
       "runner": "nx-cloud",
       "options": {
         "cacheableOperations": ["build", "lint", "test", "e2e"],
-        "accessToken": "ZjI0YjFlYjctY2I3My00ZDE0LWJmOWUtN2Y1NzRhOWVhZTI2fHJlYWQtd3JpdGU="
+        "accessToken": "Y2FiNWYzOGYtZDI4Zi00NGMwLTllMmQtNzRiYmYwOTk1YjQ5fHJlYWQtd3JpdGU="
       }
     }
   },
@@ -14,9 +13,10 @@
     "default": ["{projectRoot}/**/*", "sharedGlobals"],
     "production": [
       "default",
-      "!{projectRoot}/.eslintrc.json",
       "!{projectRoot}/**/?(*.)+(spec|test).[jt]s?(x)?(.snap)",
-      "!{projectRoot}/tsconfig.spec.json"
+      "!{projectRoot}/tsconfig.spec.json",
+      "!{projectRoot}/.eslintrc.json",
+      "!{projectRoot}/jest.config.[jt]s"
     ],
     "sharedGlobals": []
   },
@@ -33,19 +33,35 @@
       "dependsOn": ["^build"],
       "inputs": ["production", "^production"]
     },
-    "lint": {
-      "inputs": ["default", "{workspaceRoot}/.eslintrc.json", "{workspaceRoot}/.eslintignore"]
+    "e2e": {
+      "inputs": ["default", "^production"]
     },
     "test": {
-      "inputs": ["default", "^production"]
+      "inputs": ["default", "^production", "{workspaceRoot}/jest.preset.js"]
+    },
+    "lint": {
+      "inputs": ["default", "{workspaceRoot}/.eslintrc.json", "{workspaceRoot}/.eslintignore"]
+    }
+  },
+  "generators": {
+    "@nx/react": {
+      "application": {
+        "style": "styled-components",
+        "linter": "eslint",
+        "bundler": "vite",
+        "babel": true
+      },
+      "component": {
+        "style": "styled-components"
+      },
+      "library": {
+        "style": "styled-components",
+        "linter": "eslint",
+        "unitTestRunner": "vitest"
+      }
     }
   },
   "affected": {
     "defaultBase": "main"
-  },
-  "generators": {
-    "@nx/js:library": {
-      "buildable": true
-    }
   }
 }

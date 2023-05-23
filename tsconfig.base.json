@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@mentorship/shared-ui": ["libs/shared-ui/src/index.ts"]
+      "@mentorship/shared/ui": ["libs/shared/ui/src/index.ts"],
+      "@mentorship/user-server": ["libs/user-server/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
