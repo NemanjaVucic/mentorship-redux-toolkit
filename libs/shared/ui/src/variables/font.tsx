@@ -1,6 +1,6 @@
 export const font = {
   size: {
-    small: '10px',
+    small: '12px',
     base: '16px',
     medium: '20px',
     large: '24px',

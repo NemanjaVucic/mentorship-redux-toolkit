@@ -1,15 +1,15 @@
-import { Button } from '../button/Button';
+import Button from '../button/Button';
 import { Image } from '../image/Image';
 
-import { ButtonWrapper, CardContainer, CardHeader, CardInfo, DeleteButton } from './Card.styled';
+import { CardButtonWrapper, CardContainer, CardHeader, CardInfo, DeleteButton } from './Card.styled';
 
-export interface CardInfoProps {
+interface CardInfoProps {
   firstName: string;
   lastName: string;
   avatar: string;
 }
 
-export const Card = ({ firstName, lastName, avatar }: CardInfoProps) => {
+const Card = ({ firstName, lastName, avatar }: CardInfoProps) => {
   return (
     <CardContainer>
       <CardHeader>
@@ -17,10 +17,12 @@ export const Card = ({ firstName, lastName, avatar }: CardInfoProps) => {
         <CardInfo>Last name: {lastName}</CardInfo>
       </CardHeader>
       <Image src={avatar} alt={`${firstName}-${lastName}-avatar`} />
-      <ButtonWrapper>
+      <CardButtonWrapper>
         <Button>Edit</Button>
         <DeleteButton>Delete</DeleteButton>
-      </ButtonWrapper>
+      </CardButtonWrapper>
     </CardContainer>
   );
 };
+
+export default Card;

@@ -1,8 +1,10 @@
 import styled from 'styled-components';
 
-import { space, font, color } from '../../variables';
+import { color, font, space } from '../../variables';
 
-export const ButtonBaseStyles = styled.button`
+import { ButtonProps } from './Button';
+
+export const ButtonBaseStyles = styled.button<ButtonProps>`
   background: transparent;
   color: ${color.dodgerblue};
   cursor: pointer;
