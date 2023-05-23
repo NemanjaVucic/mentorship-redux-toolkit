@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 import { color, space } from '../../variables';
 import { ButtonBaseStyles } from '../button/Button.styled';
-import { StyledFormControl, StyledFormInput } from '../form/input/Input.styled';
+import { StyledFormControl, StyledFormInput } from '../input/Input.styled';
 
 export const ChangeAvatarWrapper = styled(StyledFormControl)`
   grid-template-columns: repeat(3, 1fr);

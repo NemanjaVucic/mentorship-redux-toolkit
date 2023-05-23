@@ -8,7 +8,7 @@ export interface IFormProps<T extends FieldValues> extends Omit<ComponentPropsWi
   onSubmit: SubmitHandler<T>;
 }
 
-const Form = <T extends FieldValues>({ form, onSubmit, children, ...props }: IFormProps<T>) => {
+export const Form = <T extends FieldValues>({ form, onSubmit, children, ...props }: IFormProps<T>) => {
   return (
     <FormProvider {...form}>
       <StyledFormContainer>
@@ -19,5 +19,3 @@ const Form = <T extends FieldValues>({ form, onSubmit, children, ...props }: IFo
     </FormProvider>
   );
 };
-
-export default Form;

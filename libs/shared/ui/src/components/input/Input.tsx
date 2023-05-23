@@ -1,6 +1,6 @@
 import { ComponentPropsWithoutRef, forwardRef } from 'react';
 
-import ValidationError from '../validation-error/ValidationError';
+import { ValidationError } from '../validation-error/ValidationError';
 
 import { StyledFormControl, StyledFormInput, StyledFormLabel } from './Input.styled';
 
@@ -8,7 +8,7 @@ export interface IInputProps extends ComponentPropsWithoutRef<'input'> {
   label: string;
 }
 
-const Input = forwardRef<HTMLInputElement, IInputProps>(({ label, type = 'text', ...props }, ref) => {
+export const Input = forwardRef<HTMLInputElement, IInputProps>(({ label, type = 'text', ...props }, ref) => {
   return (
     <>
       <StyledFormControl>
@@ -21,5 +21,3 @@ const Input = forwardRef<HTMLInputElement, IInputProps>(({ label, type = 'text',
 });
 
 Input.displayName = 'Input';
-
-export default Input;

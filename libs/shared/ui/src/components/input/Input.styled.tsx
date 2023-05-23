@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { font, space } from '../../../variables';
+import { font, space } from '../../variables';
 
 export const StyledFormControl = styled.div`
   display: grid;

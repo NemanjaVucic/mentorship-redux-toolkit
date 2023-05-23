@@ -1,11 +1,5 @@
+import { Form, Input, TextArea, ChangeAvatar, Button, useForm } from '@mentorship/shared/ui';
 import { z } from 'zod';
-
-import ChangeAvatar from '../../components/avatar/ChangeAvatar';
-import Button from '../../components/button/Button';
-import Form from '../../components/form/Form';
-import { useForm } from '../../components/form/hook/useForm';
-import Input from '../../components/form/input/Input';
-import TextArea from '../../components/form/text-area/TextArea';
 
 import { CreateCardButtonWrapper } from './CreateCard.styled';
 

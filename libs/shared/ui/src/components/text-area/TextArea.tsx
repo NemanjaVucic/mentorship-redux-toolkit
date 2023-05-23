@@ -8,7 +8,7 @@ export interface TextAreaProps extends ComponentPropsWithoutRef<'textarea'> {
   label?: string;
 }
 
-const TextArea = forwardRef<HTMLTextAreaElement, TextAreaProps>(({ label, ...props }, ref) => {
+export const TextArea = forwardRef<HTMLTextAreaElement, TextAreaProps>(({ label, ...props }, ref) => {
   const hasLabel = !!label;
   return (
     <StyledTextAreaFormControl hasLabel={hasLabel}>
@@ -19,5 +19,3 @@ const TextArea = forwardRef<HTMLTextAreaElement, TextAreaProps>(({ label, ...pro
 });
 
 TextArea.displayName = 'TextArea';
-
-export default TextArea;

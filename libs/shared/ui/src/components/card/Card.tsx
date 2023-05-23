@@ -1,4 +1,4 @@
-import Button from '../button/Button';
+import { Button } from '../button/Button';
 import { Image } from '../image/Image';
 
 import { CardButtonWrapper, CardContainer, CardHeader, CardInfo, DeleteButton } from './Card.styled';
@@ -9,7 +9,7 @@ interface CardInfoProps {
   avatar: string;
 }
 
-const Card = ({ firstName, lastName, avatar }: CardInfoProps) => {
+export const Card = ({ firstName, lastName, avatar }: CardInfoProps) => {
   return (
     <CardContainer>
       <CardHeader>
@@ -24,5 +24,3 @@ const Card = ({ firstName, lastName, avatar }: CardInfoProps) => {
     </CardContainer>
   );
 };
-
-export default Card;

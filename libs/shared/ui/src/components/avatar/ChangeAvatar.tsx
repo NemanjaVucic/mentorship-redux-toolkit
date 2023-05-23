@@ -1,8 +1,8 @@
 import { ComponentPropsWithoutRef, forwardRef } from 'react';
 
 import { Avatar1 } from '../../assets/mocks';
-import { StyledFormLabel } from '../form/input/Input.styled';
-import ValidationError from '../form/validation-error/ValidationError';
+import { StyledFormLabel } from '../input/Input.styled';
+import { ValidationError } from '../validation-error';
 
 import {
   ChangeAvatarBox,
@@ -11,7 +11,7 @@ import {
   ChangeAvatarWrapper,
 } from './ChangeAvatar.styled';
 
-const ChangeAvatar = forwardRef<HTMLInputElement, ComponentPropsWithoutRef<'input'>>((props, ref) => {
+export const ChangeAvatar = forwardRef<HTMLInputElement, ComponentPropsWithoutRef<'input'>>((props, ref) => {
   return (
     <>
       <ChangeAvatarWrapper>
@@ -27,5 +27,3 @@ const ChangeAvatar = forwardRef<HTMLInputElement, ComponentPropsWithoutRef<'inpu
 });
 
 ChangeAvatar.displayName = 'ChangeAvatar';
-
-export default ChangeAvatar;

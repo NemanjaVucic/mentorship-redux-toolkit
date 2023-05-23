@@ -1,10 +1,10 @@
 import { useFormContext } from 'react-hook-form';
 
-import { errorCasting } from '../../../utils/error-casting';
+import { errorCasting } from '../../utils/error-casting';
 
 import { ValidationErrorMessage } from './ValidationError.styled';
 
-const ValidationError = ({ name = '' }: { name?: string }) => {
+export const ValidationError = ({ name = '' }: { name?: string }) => {
   const {
     formState: { errors },
   } = useFormContext();
@@ -14,5 +14,3 @@ const ValidationError = ({ name = '' }: { name?: string }) => {
 
   return <ValidationErrorMessage>{errorCasting(error)}</ValidationErrorMessage>;
 };
-
-export default ValidationError;

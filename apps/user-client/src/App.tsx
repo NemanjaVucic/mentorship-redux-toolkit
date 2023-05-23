@@ -4,7 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { BodyContainer, GlobalStyles } from './App.styled';
 import PageRouter from './pages/router';
 
-function App() {
+export const App = () => {
   return (
     <>
       <GlobalStyles />
@@ -16,6 +16,4 @@ function App() {
       </BrowserRouter>
     </>
   );
-}
-
-export default App;
+};
