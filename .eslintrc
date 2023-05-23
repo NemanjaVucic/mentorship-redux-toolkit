@@ -1,6 +1,5 @@
 {
   "root": true,
-  "parser": "@typescript-eslint/parser",
   "extends": [
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
@@ -8,7 +7,8 @@
     "plugin:prettier/recommended",
     "plugin:react-hooks/recommended"
   ],
-  "plugins": ["import"],
+  "plugins": ["import", "@nx"],
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": 2018,
     "sourceType": "module",
@@ -57,6 +57,36 @@
     "quote-props": [2, "as-needed"],
     "react/react-in-jsx-scope": 0
   },
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      "rules": {
+        "@nx/enforce-module-boundaries": [
+          "error",
+          {
+            "enforceBuildableLibDependency": true,
+            "allow": [],
+            "depConstraints": [
+              {
+                "sourceTag": "*",
+                "onlyDependOnLibsWithTags": ["*"]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "files": ["*.ts", "*.tsx"],
+      "extends": ["plugin:@nx/typescript"],
+      "rules": {}
+    },
+    {
+      "files": ["*.js", "*.jsx"],
+      "extends": ["plugin:@nx/javascript"],
+      "rules": {}
+    }
+  ],
   "settings": {
     "react": {
       "version": "detect"
