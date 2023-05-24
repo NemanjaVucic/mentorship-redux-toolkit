@@ -2,10 +2,6 @@
 
 import { Dispatch, SetStateAction } from 'react';
 
-import { AvatarImages } from '../../../assets/mocks/avatarImages';
-import Button from '../../button/Button';
-import { DeleteButton } from '../../card/Card.styled';
-
 import {
   AvatarModalWrapper,
   AvatarButtonWrapper,
@@ -14,6 +10,9 @@ import {
   AvatarBody,
   AvatarImage,
 } from './AvatarModal.styled';
+import { AvatarImages } from '../../assets/mocks/avatarImages';
+import { Button } from '../button';
+import { DeleteButton } from '../card/Card.styled';
 
 interface AvatarModalProps {
   closeModal: () => void;
