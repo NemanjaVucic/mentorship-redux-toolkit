@@ -1,6 +1,5 @@
+import { errorCasting } from '@mentorship/shared/utils';
 import { useFormContext } from 'react-hook-form';
-
-import { errorCasting } from '../../utils/error-casting';
 
 import { ValidationErrorMessage } from './ValidationError.styled';
 
