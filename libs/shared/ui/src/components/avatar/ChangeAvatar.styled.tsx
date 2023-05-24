@@ -23,6 +23,7 @@ export const ChangeAvatarBox = styled.div`
 export const ChangeAvatarInputStyled = styled(StyledFormInput)`
   padding: 0;
   width: 100%;
+  height: inherit;
   border: 2px solid ${color.dodgerblue};
 `;
 

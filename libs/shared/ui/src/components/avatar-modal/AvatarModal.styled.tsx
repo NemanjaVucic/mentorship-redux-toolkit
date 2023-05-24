@@ -27,18 +27,14 @@ export const AvatarBody = styled.div`
   margin: ${space.x4} 0;
 `;
 
-export const AvatarImage = styled(ImageBody)`
+export const AvatarImage = styled(ImageBody)<{ isSelected: boolean }>`
   position: static;
-  border: 2px solid ${color.gray};
+  border: ${({ isSelected }) => (isSelected ? `4px solid ${color.dodgerblue}` : `2px solid ${color.gray}`)};
   transition: 0.35s ease-in-out;
 
   &:hover {
     transform: scale(1.6);
     cursor: pointer;
-  }
-  &:active {
-    border: 2px solid ${color.dodgerblue};
-    transform: scale(1.2);
   }
 `;
 
