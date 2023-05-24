@@ -22,5 +22,5 @@ app.get('/', (req: Request, res: Response) => {
 });
 
 app.listen(port, host, () => {
-  console.log(`[ ready 🚀 ] http://${host}:${port}`);
+  console.log(`🚀 server is ready: http://${host}:${port}`);
 });
