@@ -1,6 +1,5 @@
+import { useGetUsersQuery } from '@mentorship/data-access';
 import { Card, Loader, Error } from '@mentorship/shared/ui';
-
-import { useGetUsersQuery } from '../../redux-toolkit/api';
 
 import { CardWrapper } from './HomePage.styled';
 
