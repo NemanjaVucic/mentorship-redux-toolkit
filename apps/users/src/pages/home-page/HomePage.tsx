@@ -1,4 +1,4 @@
-import { useGetUsersQuery } from '@mentorship/data-access';
+import { useGetUsersQuery } from '@mentorship/users/data-access';
 import { Card, Loader, Error } from '@mentorship/shared/ui';
 
 import { CardWrapper } from './HomePage.styled';

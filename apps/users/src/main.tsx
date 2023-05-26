@@ -1,4 +1,4 @@
-import { api, store } from '@mentorship/data-access';
+import { api, store } from '@mentorship/users/data-access';
 import { ApiProvider } from '@reduxjs/toolkit/query/react';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
