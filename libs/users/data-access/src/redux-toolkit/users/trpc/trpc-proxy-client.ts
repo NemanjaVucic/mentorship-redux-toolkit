@@ -1,4 +1,4 @@
-import type { AppRouter } from '@mentorship/server';
+import type { AppRouter } from '@mentorship/users/server';
 import { createTRPCProxyClient, httpBatchLink } from '@trpc/react-query';
 import type { inferProcedureOutput } from '@trpc/server';
 
