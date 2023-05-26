@@ -4,7 +4,7 @@ import { defineConfig } from 'vite';
 import viteTsConfigPaths from 'vite-tsconfig-paths';
 
 export default defineConfig({
-  cacheDir: '../../node_modules/.vite/user-client',
+  cacheDir: '../../node_modules/.vite/users',
 
   server: {
     port: 4200,
