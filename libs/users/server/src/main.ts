@@ -1,4 +1,5 @@
 import * as trpcExpress from '@trpc/server/adapters/express';
+import chalk from 'chalk';
 import cors from 'cors';
 import express, { Application, Request, Response } from 'express';
 
@@ -22,5 +23,5 @@ app.get('/', (req: Request, res: Response) => {
 });
 
 app.listen(port, host, () => {
-  console.log(`🚀 server is ready: http://${host}:${port}`);
+  console.log(`  🚀 Server:\t${chalk.hex('#2b996f')(`http://${host}:${port}`)}`);
 });
