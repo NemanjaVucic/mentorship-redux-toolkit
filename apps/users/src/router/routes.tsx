@@ -1,11 +1,11 @@
 import { RouteProps } from 'react-router-dom';
 
-import { About } from './about/About';
-import { CreateCard } from './create-card/CreateCard';
-import { HomePage } from './home-page/HomePage';
-import { UpdateCard } from './update-card/UpdateCard';
+import { About } from '../pages/about/About';
+import { CreateCard } from '../pages/create-card/CreateCard';
+import { HomePage } from '../pages/home-page/HomePage';
+import { UpdateCard } from '../pages/update-card/UpdateCard';
 
-const routes: RouteProps[] = [
+export const routes: RouteProps[] = [
   {
     path: '/',
     element: <HomePage />,
@@ -23,5 +23,3 @@ const routes: RouteProps[] = [
     element: <About />,
   },
 ];
-
-export default routes;
