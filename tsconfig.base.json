@@ -17,6 +17,7 @@
     "paths": {
       "@mentorship/shared/ui": ["libs/shared/ui/src/index.ts"],
       "@mentorship/shared/utils": ["libs/shared/utils/src/index.ts"],
+      "@mentorship/storybook-host-react": ["libs/storybook-host-react/src/index.ts"],
       "@mentorship/users/data-access": ["libs/users/data-access/src/index.ts"],
       "@mentorship/users/feature": ["libs/users/feature/src/index.ts"],
       "@mentorship/users/pages": ["libs/users/pages/src/index.ts"],
