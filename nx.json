@@ -9,6 +9,14 @@
       }
     }
   },
+  "implicitDependencies": {
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    "tsconfig.base.json": "*",
+    "nx.json": "*"
+  },
   "namedInputs": {
     "default": ["{projectRoot}/**/*", "sharedGlobals"],
     "production": [
@@ -21,14 +29,6 @@
       "!{projectRoot}/.storybook/**/*"
     ],
     "sharedGlobals": ["{workspaceRoot}/babel.config.json"]
-  },
-  "implicitDependencies": {
-    "package.json": {
-      "dependencies": "*",
-      "devDependencies": "*"
-    },
-    "tsconfig.base.json": "*",
-    "nx.json": "*"
   },
   "targetDefaults": {
     "build": {
@@ -66,6 +66,7 @@
       }
     }
   },
+
   "affected": {
     "defaultBase": "main"
   }

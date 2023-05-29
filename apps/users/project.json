@@ -72,6 +72,41 @@
       "options": {
         "buildTarget": "users:build"
       }
+    },
+    "build-storybook": {
+      "executor": "@nx/storybook:build",
+      "outputs": ["{options.outputDir}"],
+      "options": {
+        "outputDir": "dist/storybook/users",
+        "configDir": "libs/storybook-host/.storybook"
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    },
+    "storybook": {
+      "executor": "@nx/storybook:storybook",
+      "defaultConfiguration": "development",
+      "options": {
+        "port": 4400,
+        "configDir": "libs/storybook-host/.storybook",
+        "buildTarget": "users:build-storybook"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "users:build-storybook:development",
+          "hmr": true
+        },
+        "production": {
+          "ci": {
+            "quiet": true
+          },
+          "buildTarget": "users:build-storybook:production",
+          "hmr": false
+        }
+      }
     }
   },
   "tags": []
