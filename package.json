@@ -41,6 +41,7 @@
     "@nx/react": "16.2.1",
     "@nx/storybook": "^16.2.2",
     "@nx/vite": "16.2.1",
+    "@nx/webpack": "^16.2.2",
     "@nx/workspace": "16.2.1",
     "@storybook/addon-a11y": "^7.0.18",
     "@storybook/addon-essentials": "^7.0.9",

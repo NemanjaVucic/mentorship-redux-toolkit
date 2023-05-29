@@ -3,7 +3,7 @@ import type { StorybookConfig } from '@storybook/react-vite';
 export const rootConfig: StorybookConfig = {
   // Required
   framework: '@storybook/react-vite',
-  stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
+  stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
   // Optional
   addons: [
     '@storybook/addon-essentials',
