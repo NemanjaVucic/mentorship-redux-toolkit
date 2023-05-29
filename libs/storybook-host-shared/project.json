@@ -4,6 +4,7 @@
   "sourceRoot": "libs/storybook-host-shared/src",
   "projectType": "library",
   "tags": [],
+  "implicitDependencies": ["shared-ui"],
   "targets": {
     "lint": {
       "executor": "@nx/linter:eslint",
