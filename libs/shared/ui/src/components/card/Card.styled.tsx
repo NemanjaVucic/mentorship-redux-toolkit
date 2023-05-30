@@ -1,12 +1,12 @@
+import { Color, font, space } from '@mentorship/shared/variables';
 import styled from 'styled-components';
 
-import { color, font, space } from '../../variables';
 import { ButtonBaseStyles } from '../button/Button.styled';
 
 export const CardContainer = styled.div`
   width: 100%;
   padding: ${space.x5};
-  border: 3px solid ${color.dodgerblue};
+  border: 3px solid ${Color.dodgerblue};
   border-radius: 10px;
 `;
 
@@ -26,6 +26,6 @@ export const CardButtonWrapper = styled.div`
 `;
 
 export const DeleteButton = styled(ButtonBaseStyles)`
-  color: ${color.darkred};
-  border: 2px solid ${color.darkred};
+  color: ${Color.darkred};
+  border: 2px solid ${Color.darkred};
 `;

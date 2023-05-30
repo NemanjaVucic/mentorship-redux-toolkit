@@ -1,6 +1,5 @@
+import { Color, space } from '@mentorship/shared/variables';
 import styled from 'styled-components';
-
-import { color, space } from '../../variables';
 
 export const StyledFormContainer = styled.div`
   max-width: 100%;
@@ -12,7 +11,7 @@ export const StyledForm = styled.form`
   padding: ${space.x8};
   display: grid;
 
-  border: 3px solid ${color.dodgerblue};
+  border: 3px solid ${Color.dodgerblue};
   border-radius: 10px;
 `;
 

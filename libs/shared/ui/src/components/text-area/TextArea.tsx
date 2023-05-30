@@ -11,7 +11,7 @@ export interface TextAreaProps extends ComponentPropsWithoutRef<'textarea'> {
 export const TextArea = forwardRef<HTMLTextAreaElement, TextAreaProps>(({ label, ...props }, ref) => {
   const hasLabel = !!label;
   return (
-    <StyledTextAreaFormControl hasLabel={hasLabel}>
+    <StyledTextAreaFormControl $hasLabel={hasLabel}>
       {hasLabel && <StyledFormLabel>{label}</StyledFormLabel>}
       <StyledFormTextArea ref={ref} {...props} />
     </StyledTextAreaFormControl>

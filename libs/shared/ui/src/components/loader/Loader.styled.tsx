@@ -1,6 +1,5 @@
+import { Color } from '@mentorship/shared/variables';
 import styled from 'styled-components';
-
-import { color } from '../../variables';
 
 export const SpinnerWrapper = styled.div`
   display: flex;
@@ -11,7 +10,7 @@ export const Spinner = styled.div`
   width: 48px;
   height: 48px;
   border: 5px solid;
-  border-color: ${color.dodgerblue} transparent;
+  border-color: ${Color.dodgerblue} transparent;
   border-radius: 50%;
   animation: rotation 1s linear infinite;
 

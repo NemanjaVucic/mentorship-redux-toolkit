@@ -1,6 +1,6 @@
+import { Color, space } from '@mentorship/shared/variables';
 import styled from 'styled-components';
 
-import { color, space } from '../../variables';
 import { ButtonBaseStyles } from '../button/Button.styled';
 import { StyledFormControl, StyledFormInput } from '../input/Input.styled';
 
@@ -24,7 +24,7 @@ export const ChangeAvatarInputStyled = styled(StyledFormInput)`
   padding: 0;
   width: 100%;
   height: inherit;
-  border: 2px solid ${color.dodgerblue};
+  border: 2px solid ${Color.dodgerblue};
 `;
 
 export const ChangeAvatarButton = styled(ButtonBaseStyles)`
