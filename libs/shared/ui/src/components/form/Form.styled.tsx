@@ -1,6 +1,5 @@
+import { Color, space } from '@mentorship/shared/variables';
 import styled from 'styled-components';
-
-import { Color, space } from '../../variables';
 
 export const StyledFormContainer = styled.div`
   max-width: 100%;

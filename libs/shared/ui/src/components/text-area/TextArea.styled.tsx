@@ -1,6 +1,6 @@
+import { space } from '@mentorship/shared/variables';
 import styled from 'styled-components';
 
-import { space } from '../../variables';
 import { StyledFormControl } from '../input/Input.styled';
 
 export const StyledTextAreaFormControl = styled(StyledFormControl)<{ $hasLabel: boolean }>`

@@ -1,7 +1,7 @@
+import { space } from '@mentorship/shared/variables';
 import styled from 'styled-components';
 
 import { TImage } from '../../types';
-import { space } from '../../variables';
 
 export const ImageWrapper = styled.div`
   margin-bottom: ${space.x3};

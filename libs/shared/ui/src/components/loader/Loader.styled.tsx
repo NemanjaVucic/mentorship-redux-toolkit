@@ -1,6 +1,5 @@
+import { Color } from '@mentorship/shared/variables';
 import styled from 'styled-components';
-
-import { Color } from '../../variables';
 
 export const SpinnerWrapper = styled.div`
   display: flex;

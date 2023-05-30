@@ -1,6 +1,5 @@
+import { Color, font, space } from '@mentorship/shared/variables';
 import styled from 'styled-components';
-
-import { Color, font, space } from '../../variables';
 
 export const ValidationErrorMessage = styled.p`
   color: ${Color.darkred};

@@ -1,6 +1,6 @@
+import { Color, font, space } from '@mentorship/shared/variables';
 import styled from 'styled-components';
 
-import { Color, font, space } from '../../variables';
 import { ButtonBaseStyles } from '../button/Button.styled';
 
 export const CardContainer = styled.div`

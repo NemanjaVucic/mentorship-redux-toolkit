@@ -1,6 +1,5 @@
+import { Color, font, space } from '@mentorship/shared/variables';
 import styled from 'styled-components';
-
-import { Color, font, space } from '../../variables';
 
 import { ButtonProps } from './Button';
 

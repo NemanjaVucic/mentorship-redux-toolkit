@@ -1,7 +1,6 @@
+import { Color, font, space } from '@mentorship/shared/variables';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
-
-import { Color, font, space } from '../../variables';
 
 export const NavigationContainer = styled.nav`
   display: flex;

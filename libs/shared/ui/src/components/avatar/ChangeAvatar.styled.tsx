@@ -1,6 +1,6 @@
+import { Color, space } from '@mentorship/shared/variables';
 import styled from 'styled-components';
 
-import { Color, space } from '../../variables';
 import { ButtonBaseStyles } from '../button/Button.styled';
 import { StyledFormControl, StyledFormInput } from '../input/Input.styled';
 
