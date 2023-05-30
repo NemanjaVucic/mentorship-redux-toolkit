@@ -9,7 +9,7 @@ const config: StorybookConfig = {
   },
   stories: [
     '../../users/pages/src/**/*.stories.@(js|jsx|ts|tsx|mdx)',
-    '../../users/feature/src/**/*.stories.@(js|jsx|ts|tsx|mdx)',
+    '../../users/features/src/**/*.stories.@(js|jsx|ts|tsx|mdx)',
   ],
   addons: [...(rootMain.addons ?? [])],
 };

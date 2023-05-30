@@ -52,7 +52,7 @@
       "executor": "@nx/storybook:build",
       "outputs": ["{options.outputDir}"],
       "options": {
-        "outputDir": "dist/storybook/users-feature",
+        "outputDir": "dist/storybook/users-features",
         "configDir": "libs/users/features/.storybook"
       },
       "configurations": {

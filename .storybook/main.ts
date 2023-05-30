@@ -26,9 +26,9 @@ export const rootConfig: StorybookConfig = {
   },
   // uncomment the property below if you want to apply some vite config globally
   viteFinal: async (config, { configType }) => {
-    // `configType` has a value of 'DEVELOPMENT' or 'PRODUCTION'
-    // You can change the configuration based on that.
-    // 'PRODUCTION' is used when building the static version of storybook.
+    //   // `configType` has a value of 'DEVELOPMENT' or 'PRODUCTION'
+    //   // You can change the configuration based on that.
+    //   // 'PRODUCTION' is used when building the static version of storybook.
 
     return mergeConfig(config, {
       resolve: {
