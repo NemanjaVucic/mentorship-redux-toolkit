@@ -17,7 +17,15 @@
     "paths": {
       "@mentorship/shared/ui": ["libs/shared/ui/src/index.ts"],
       "@mentorship/shared/utils": ["libs/shared/utils/src/index.ts"],
-      "@mentorship/user-server": ["libs/user-server/src/index.ts"]
+      "@mentorship/shared/variables": ["libs/shared/variables/src/index.ts"],
+      "@mentorship/storybook-host": ["libs/storybook-host/src/index.ts"],
+      "@mentorship/storybook-host-react": ["libs/storybook-host-react/src/index.ts"],
+      "@mentorship/storybook-host-shared": ["libs/storybook-host-shared/src/index.ts"],
+      "@mentorship/storybook-host-users": ["libs/storybook-host-users/src/index.ts"],
+      "@mentorship/users/data-access": ["libs/users/data-access/src/index.ts"],
+      "@mentorship/users/features": ["libs/users/features/src/index.ts"],
+      "@mentorship/users/pages": ["libs/users/pages/src/index.ts"],
+      "@mentorship/users/server": ["libs/users/server/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
