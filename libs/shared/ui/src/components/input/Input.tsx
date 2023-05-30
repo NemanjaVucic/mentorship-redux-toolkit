@@ -1,6 +1,6 @@
 import { ComponentPropsWithoutRef, forwardRef } from 'react';
 
-import { ValidationError } from '../validation-error/ValidationError';
+import { ValidationError } from '../validation-error';
 
 import { StyledFormControl, StyledFormInput, StyledFormLabel } from './Input.styled';
 

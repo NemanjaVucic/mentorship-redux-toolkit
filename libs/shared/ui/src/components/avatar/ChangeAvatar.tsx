@@ -1,7 +1,7 @@
 import { ComponentPropsWithoutRef, forwardRef, useState } from 'react';
-import { createPortal } from 'react-dom';
 
-import { Avatar1 } from '../../assets/mocks';
+import { avatarImages } from '../../assets/mocks/avatarImages';
+import { AvatarModal } from '../avatar-modal/AvatarModal';
 import { StyledFormLabel } from '../input/Input.styled';
 import { ValidationError } from '../validation-error';
 
@@ -11,29 +11,30 @@ import {
   ChangeAvatarInputStyled,
   ChangeAvatarWrapper,
 } from './ChangeAvatar.styled';
-import AvatarModal from '../avatar-modal/AvatarModal';
-import { AvatarImages } from '../../assets/mocks/avatarImages';
 
-const ChangeAvatar = forwardRef<HTMLInputElement, ComponentPropsWithoutRef<'input'>>((props, ref) => {
+export const ChangeAvatar = forwardRef<HTMLInputElement, ComponentPropsWithoutRef<'input'>>((props, ref) => {
+  const defaultAvatarId = avatarImages[0].id;
   const [showModal, setShowModal] = useState(false);
-  const [images, setImages] = useState<AvatarImages[]>(avatarImages);
-  console.log('IMAGES: ', images);
+  const [selectedId, setSelectedId] = useState(defaultAvatarId);
+  const [appliedId, setAppliedId] = useState(defaultAvatarId);
 
-  // const updatedImages = images.map((image) =>
-  //   image.id === id ? { ...image, isSelected: true } : { ...image, isSelected: false },
-  // );
+  const openModal = () => {
+    setShowModal(true);
+  };
+
+  const handleApplyId = (id: number) => {
+    setSelectedId(id);
+    setAppliedId(id);
+  };
 
   return (
     <>
       <ChangeAvatarWrapper>
         <StyledFormLabel>Avatar</StyledFormLabel>
         <ChangeAvatarBox>
-          {/* <ChangeAvatarInputStyled type="image" name={props.name} src={Avatar1} ref={ref} value={Avatar1} {...props} /> */}
-
-          {images.map((image) => {
-            console.log('ONE BY ONE IMAGE: ', image);
-            return (
-              image.isSelected && (
+          {avatarImages.map(
+            (image) =>
+              selectedId === image.id && (
                 <ChangeAvatarInputStyled
                   key={image.id}
                   type="image"
@@ -43,18 +44,21 @@ const ChangeAvatar = forwardRef<HTMLInputElement, ComponentPropsWithoutRef<'inpu
                   value={image.imgPath}
                   {...props}
                 />
-              )
-            );
-          })}
+              ),
+          )}
         </ChangeAvatarBox>
-        <ChangeAvatarButton type="button" onClick={() => setShowModal(true)}>
+        <ChangeAvatarButton type="button" onClick={openModal}>
           Change avatar
         </ChangeAvatarButton>
-        {showModal &&
-          createPortal(
-            <AvatarModal images={images} setImages={setImages} closeModal={() => setShowModal(false)} />,
-            document.body,
-          )}
+        <AvatarModal
+          avatarImages={avatarImages}
+          showModal={showModal}
+          setShowModal={setShowModal}
+          selectedId={selectedId}
+          setSelectedId={setSelectedId}
+          appliedId={appliedId}
+          onApplyId={handleApplyId}
+        />
       </ChangeAvatarWrapper>
       <ValidationError name={props.name} />
     </>

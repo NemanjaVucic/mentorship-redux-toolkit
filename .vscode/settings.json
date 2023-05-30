@@ -24,5 +24,5 @@
     "source.fixAll.eslint": true
   },
   "peacock.color": "#994746",
-  "cSpell.words": ["hookform", "trivago", "trpc"]
+  "cSpell.words": ["cssmodule", "hookform", "trivago", "trpc"]
 }
