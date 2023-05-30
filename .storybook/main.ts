@@ -16,6 +16,7 @@ export const rootConfig: StorybookConfig = {
     'storybook-color-picker',
     'storybook-multilevel-sort',
     'msw-storybook-addon', // need to execute `pnpm dlx msw init apps/users/public/` to generate service worker for MSW
+    // '@nx/react/plugins/storybook'
   ],
   docs: {
     autodocs: 'tag',

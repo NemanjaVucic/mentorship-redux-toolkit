@@ -6,10 +6,9 @@ const config: StorybookConfig = {
   ...rootMain,
   core: {
     ...rootMain.core,
-    builder: '@storybook/builder-vite',
   },
   stories: ['../../shared/ui/src/components/**/*.stories.@(js|jsx|ts|tsx|mdx)'],
-  addons: [...(rootMain.addons ?? []), '@nx/react/plugins/storybook'],
+  addons: [...(rootMain.addons ?? [])],
 };
 
 export default config;
