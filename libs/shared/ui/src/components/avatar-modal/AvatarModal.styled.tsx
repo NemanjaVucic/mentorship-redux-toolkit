@@ -1,6 +1,6 @@
+import { Color, space } from '@mentorship/shared/variables';
 import styled from 'styled-components';
 
-import { color, space } from '../../variables';
 import { CardButtonWrapper } from '../card/Card.styled';
 import { ImageBody } from '../image/Image.styled';
 
@@ -11,9 +11,9 @@ export const AvatarModalWrapper = styled.div`
   transform: translate(-50%, -50%);
   display: grid;
   place-items: center;
-  background: ${color.white};
+  background: ${Color.white};
   padding: ${space.x8};
-  border: 2px solid ${color.dodgerblue};
+  border: 2px solid ${Color.dodgerblue};
   border-radius: 5px;
   z-index: 2;
 `;
@@ -27,9 +27,9 @@ export const AvatarBody = styled.div`
   margin: ${space.x4} 0;
 `;
 
-export const AvatarImage = styled(ImageBody)<{ isSelected: boolean }>`
+export const AvatarImage = styled(ImageBody)<{ $isSelected: boolean }>`
   position: static;
-  border: ${({ isSelected }) => (isSelected ? `4px solid ${color.dodgerblue}` : `2px solid ${color.gray}`)};
+  border: ${({ $isSelected }) => ($isSelected ? `4px solid ${Color.dodgerblue}` : `2px solid ${Color.gray}`)};
   transition: 0.35s ease-in-out;
 
   &:hover {

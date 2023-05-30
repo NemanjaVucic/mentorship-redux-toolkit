@@ -47,7 +47,7 @@ export const AvatarModal = ({
     >
       {avatarImages.map((avatarImage) => (
         <AvatarImage
-          isSelected={selectedId === avatarImage.id}
+          $isSelected={selectedId === avatarImage.id}
           key={avatarImage.id}
           src={avatarImage.imgPath}
           alt={avatarImage.imgPath}

@@ -1,6 +1,6 @@
+import { Color, space } from '@mentorship/shared/variables';
 import styled from 'styled-components';
 
-import { color, space } from '../../variables';
 import { Button } from '../button';
 import { CardButtonWrapper, DeleteButton } from '../card/Card.styled';
 
@@ -11,9 +11,9 @@ export const ModalWrapper = styled.div`
   transform: translate(-50%, -50%);
   display: grid;
   place-items: center;
-  background: ${color.white};
+  background: ${Color.white};
   padding: ${space.x8};
-  border: 2px solid ${color.dodgerblue};
+  border: 2px solid ${Color.dodgerblue};
   border-radius: 5px;
   z-index: 2;
 `;
