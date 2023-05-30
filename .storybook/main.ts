@@ -1,4 +1,7 @@
 import type { StorybookConfig } from '@storybook/react-vite';
+import * as path from 'path';
+
+import { mergeConfig } from 'vite';
 
 export const rootConfig: StorybookConfig = {
   // Required
@@ -22,12 +25,24 @@ export const rootConfig: StorybookConfig = {
     autodocs: 'tag',
   },
   // uncomment the property below if you want to apply some vite config globally
-  // viteFinal: async (config, { configType }) => {
-  // `configType` has a value of 'DEVELOPMENT' or 'PRODUCTION'
-  // You can change the configuration based on that.
-  // 'PRODUCTION' is used when building the static version of storybook.
+  viteFinal: async (config, { configType }) => {
+    // `configType` has a value of 'DEVELOPMENT' or 'PRODUCTION'
+    // You can change the configuration based on that.
+    // 'PRODUCTION' is used when building the static version of storybook.
 
-  //   return config;
-  // },
+    return mergeConfig(config, {
+      resolve: {
+        alias: {
+          '@mentorship/shared/ui': path.resolve('libs', 'shared', 'ui', 'src'),
+          '@mentorship/shared/utils': path.resolve('libs', 'shared', 'utils', 'src'),
+          '@mentorship/shared/variables': path.resolve('libs', 'shared', 'variables', 'src'),
+          '@mentorship/users/data-access': path.resolve('libs', 'users', 'data-access', 'src'),
+          '@mentorship/users/features': path.resolve('libs', 'users', 'features', 'src'),
+          '@mentorship/users/pages': path.resolve('libs', 'users', 'pages', 'src'),
+          '@mentorship/users/server': path.resolve('libs', 'users', 'server', 'src'),
+        },
+      },
+    });
+  },
 };
 export default rootConfig;
