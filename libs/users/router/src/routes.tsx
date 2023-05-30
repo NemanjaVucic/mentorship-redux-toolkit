@@ -1,21 +1,22 @@
 import { HomePage, CreateCard, UpdateCard, About } from '@mentorship/users/pages';
+import { RoutePath } from '@mentorship/users/shared';
 import { RouteProps } from 'react-router-dom';
 
 export const routes: RouteProps[] = [
   {
-    path: '/',
+    path: RoutePath.home,
     element: <HomePage />,
   },
   {
-    path: '/create',
+    path: RoutePath.createUser,
     element: <CreateCard />,
   },
   {
-    path: '/update',
+    path: RoutePath.updateUser,
     element: <UpdateCard />,
   },
   {
-    path: '/about',
+    path: RoutePath.about,
     element: <About />,
   },
 ];
