@@ -1,4 +1,4 @@
-import { font, space } from '@mentorship/shared/ui';
+import { font, space } from '@mentorship/shared/variables';
 import styled from 'styled-components';
 
 export const Paragraph = styled.p`

@@ -1,4 +1,4 @@
-import { space } from '@mentorship/shared/ui';
+import { space } from '@mentorship/shared/variables';
 import styled from 'styled-components';
 
 export const CardWrapper = styled.div`
