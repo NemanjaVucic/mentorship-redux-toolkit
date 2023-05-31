@@ -5,12 +5,7 @@ import { t } from '../lib/trpc';
 
 export const userRouter = t.router({
   list: t.procedure.query(async () => {
-    console.log('AAAAAAAAAAAAAAAAAAAAAAAA');
-
-    const aaa = await prisma.user.findMany();
-
-    console.log(aaa);
-    return aaa;
+    return prisma.user.findMany();
   }),
   create: t.procedure
     .input(
