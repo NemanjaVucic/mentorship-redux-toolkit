@@ -4,8 +4,13 @@ import { prisma } from '../lib/prismaClient';
 import { t } from '../lib/trpc';
 
 export const userRouter = t.router({
-  list: t.procedure.query(() => {
-    return prisma.user.findMany();
+  list: t.procedure.query(async () => {
+    console.log('AAAAAAAAAAAAAAAAAAAAAAAA');
+
+    const aaa = await prisma.user.findMany();
+
+    console.log(aaa);
+    return aaa;
   }),
   create: t.procedure
     .input(

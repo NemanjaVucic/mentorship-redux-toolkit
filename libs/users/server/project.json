@@ -71,6 +71,49 @@
           "codeCoverage": true
         }
       }
+    },
+    "prisma:client:generate": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "libs/users/server/prisma",
+        "command": "prisma generate",
+        "args": "--schema=schema.prisma"
+      }
+    },
+    "prisma:studio": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "libs/users/server/prisma",
+        "command": "prisma studio"
+      }
+    },
+    "prisma:migrate": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "libs/users/server/prisma",
+        "command": "prisma migrate dev --name ${args.name}"
+      }
+    },
+    "prisma:migrate:reset": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "libs/users/server/prisma",
+        "command": "prisma migrate reset"
+      }
+    },
+    "prisma:db:push": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "libs/users/server/prisma",
+        "command": "prisma db push"
+      }
+    },
+    "prisma:db:pull": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "libs/users/server/prisma",
+        "command": "prisma db pull"
+      }
     }
   },
   "tags": []
