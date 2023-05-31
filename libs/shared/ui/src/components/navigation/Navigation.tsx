@@ -1,12 +1,14 @@
+import { RoutePath } from '@mentorship/users/shared';
+
 import { NavLinkStyled, NavigationContainer } from './Navigation.styled';
 
 export const Navigation = () => {
   return (
     <NavigationContainer>
-      <NavLinkStyled to="/">Home</NavLinkStyled>
-      <NavLinkStyled to="/create">Create</NavLinkStyled>
-      <NavLinkStyled to="/update">Update</NavLinkStyled>
-      <NavLinkStyled to="/about">About</NavLinkStyled>
+      <NavLinkStyled to={RoutePath.home}>Home</NavLinkStyled>
+      <NavLinkStyled to={RoutePath.createUser}>Create</NavLinkStyled>
+      <NavLinkStyled to={RoutePath.updateUser}>Update</NavLinkStyled>
+      <NavLinkStyled to={RoutePath.about}>About</NavLinkStyled>
     </NavigationContainer>
   );
 };
