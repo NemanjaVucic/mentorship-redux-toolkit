@@ -1,4 +1,4 @@
-import { HomePage, CreateCard, UpdateCard, About } from '@mentorship/users/pages';
+import { HomePage, About, CreatePage, UpdatePage } from '@mentorship/users/pages';
 import { RoutePath } from '@mentorship/users/shared';
 import { RouteProps } from 'react-router-dom';
 
@@ -9,11 +9,11 @@ export const routes: RouteProps[] = [
   },
   {
     path: RoutePath.createUser,
-    element: <CreateCard />,
+    element: <CreatePage />,
   },
   {
     path: RoutePath.updateUser,
-    element: <UpdateCard />,
+    element: <UpdatePage />,
   },
   {
     path: RoutePath.about,

@@ -4,7 +4,7 @@ import { RoutePath } from '@mentorship/users/shared';
 import { useNavigate } from 'react-router-dom';
 import { z } from 'zod';
 
-import { CreateCardButtonWrapper } from './CreateCard.styled';
+import { CreateCardButtonWrapper } from './CreatePage.styled';
 
 const createCardSchema = z.object({
   firstName: z.string().min(1, 'First Name must be at least 1 characters long!'),
@@ -14,7 +14,7 @@ const createCardSchema = z.object({
   avatar: z.string().min(1, 'You need to provide a path image!'),
 });
 
-export const CreateCard = () => {
+export const CreatePage = () => {
   // const [createUser, result] = useCreateUsersMutation();
   const navigate = useNavigate();
 
