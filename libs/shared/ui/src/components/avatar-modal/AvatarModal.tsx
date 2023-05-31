@@ -6,9 +6,9 @@ import { AvatarImage } from './AvatarModal.styled';
 interface AvatarModalProps {
   avatarImages: AvatarImages[];
   showModal: boolean;
-  setShowModal: (showModal: boolean) => void;
+  onShowModal: (showModal: boolean) => void;
   selectedId: number;
-  setSelectedId: (id: number) => void;
+  onSelectedId: (id: number) => void;
   appliedId: number;
   onApplyId: (id: number) => void;
 }
@@ -16,32 +16,32 @@ interface AvatarModalProps {
 export const AvatarModal = ({
   avatarImages,
   showModal,
-  setShowModal,
+  onShowModal,
   selectedId,
-  setSelectedId,
+  onSelectedId,
   appliedId,
   onApplyId,
 }: AvatarModalProps) => {
   const handleApply = () => {
     onApplyId(selectedId);
-    setShowModal(false);
+    onShowModal(false);
   };
 
   const handleCancel = () => {
-    setShowModal(false);
-    setSelectedId(appliedId);
+    onShowModal(false);
+    onSelectedId(appliedId);
     onApplyId(appliedId);
   };
 
   const handleImageClick = (id: number) => {
-    setSelectedId(id);
+    onSelectedId(id);
   };
 
   return (
     <Modal
       title="Change Avatar"
       isShowing={showModal}
-      setIsShowing={setShowModal}
+      onShowModal={onShowModal}
       onApply={handleApply}
       onCancel={handleCancel}
     >

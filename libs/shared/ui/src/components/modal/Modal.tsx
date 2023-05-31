@@ -14,14 +14,14 @@ interface ModalProps {
   title: string;
   children: React.ReactNode;
   isShowing: boolean;
-  setIsShowing: (isShowing: boolean) => void;
+  onShowModal: (isShowing: boolean) => void;
   onApply: () => void;
   onCancel: () => void;
 }
 
-export const Modal = ({ title, children, isShowing, setIsShowing, onApply, onCancel }: ModalProps) => {
+export const Modal = ({ title, children, isShowing, onShowModal, onApply, onCancel }: ModalProps) => {
   const closeModal = () => {
-    setIsShowing(false);
+    onShowModal(false);
   };
 
   const handleOverlayClick = () => {

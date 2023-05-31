@@ -53,9 +53,9 @@ export const ChangeAvatar = forwardRef<HTMLInputElement, ComponentPropsWithoutRe
         <AvatarModal
           avatarImages={avatarImages}
           showModal={showModal}
-          setShowModal={setShowModal}
+          onShowModal={setShowModal}
           selectedId={selectedId}
-          setSelectedId={setSelectedId}
+          onSelectedId={setSelectedId}
           appliedId={appliedId}
           onApplyId={handleApplyId}
         />
