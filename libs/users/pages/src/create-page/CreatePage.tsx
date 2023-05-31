@@ -1,25 +1,18 @@
-import { Form, Input, TextArea, ChangeAvatar, Button, useForm } from '@mentorship/shared/ui';
+import { useZodForm } from '@mentorship/shared/hooks';
+import { Form, Input, TextArea, ChangeAvatar, Button } from '@mentorship/shared/ui';
 // import { useCreateUsersMutation } from '@mentorship/users/data-access';
-import { RoutePath } from '@mentorship/users/shared';
+import { RoutePath } from '@mentorship/users/shared/constants';
+import { createUserSchema } from '@mentorship/users/shared/schema';
 import { useNavigate } from 'react-router-dom';
-import { z } from 'zod';
 
 import { CreateCardButtonWrapper } from './CreatePage.styled';
-
-const createCardSchema = z.object({
-  firstName: z.string().min(1, 'First Name must be at least 1 characters long!'),
-  lastName: z.string().min(1, 'Last Name must be at least 1 characters long!'),
-  email: z.string().email(),
-  bio: z.string().optional(),
-  avatar: z.string().min(1, 'You need to provide a path image!'),
-});
 
 export const CreatePage = () => {
   // const [createUser, result] = useCreateUsersMutation();
   const navigate = useNavigate();
 
-  const form = useForm({
-    schema: createCardSchema,
+  const form = useZodForm({
+    schema: createUserSchema,
   });
 
   const handleCreateUser = async (user: any) => {

@@ -1,4 +1,4 @@
-import { RoutePath } from '@mentorship/users/shared';
+import { RoutePath } from '@mentorship/users/shared/constants';
 
 import { NavLinkStyled, NavigationContainer } from './Navigation.styled';
 
