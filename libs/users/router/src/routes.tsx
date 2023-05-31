@@ -1,5 +1,5 @@
 import { HomePage, About, CreatePage, UpdatePage } from '@mentorship/users/pages';
-import { RoutePath } from '@mentorship/users/shared';
+import { RoutePath } from '@mentorship/users/shared/constants';
 import { RouteProps } from 'react-router-dom';
 
 export const routes: RouteProps[] = [
