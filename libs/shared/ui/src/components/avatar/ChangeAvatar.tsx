@@ -1,6 +1,7 @@
-import { ComponentPropsWithoutRef, forwardRef } from 'react';
+import { ComponentPropsWithoutRef, forwardRef, useState } from 'react';
 
-import { Avatar1 } from '../../assets/mocks';
+import { avatarImages } from '../../assets/mocks/avatarImages';
+import { AvatarModal } from '../avatar-modal/AvatarModal';
 import { StyledFormLabel } from '../input/Input.styled';
 import { ValidationError } from '../validation-error';
 
@@ -12,14 +13,52 @@ import {
 } from './ChangeAvatar.styled';
 
 export const ChangeAvatar = forwardRef<HTMLInputElement, ComponentPropsWithoutRef<'input'>>((props, ref) => {
+  const defaultAvatarId = avatarImages[0].id;
+  const [showModal, setShowModal] = useState(false);
+  const [selectedId, setSelectedId] = useState(defaultAvatarId);
+  const [appliedId, setAppliedId] = useState(defaultAvatarId);
+
+  const openModal = () => {
+    setShowModal(true);
+  };
+
+  const handleApplyId = (id: number) => {
+    setSelectedId(id);
+    setAppliedId(id);
+  };
+
   return (
     <>
       <ChangeAvatarWrapper>
         <StyledFormLabel>Avatar</StyledFormLabel>
         <ChangeAvatarBox>
-          <ChangeAvatarInputStyled type="image" name={props.name} src={Avatar1} ref={ref} value={Avatar1} {...props} />
+          {avatarImages.map(
+            (image) =>
+              selectedId === image.id && (
+                <ChangeAvatarInputStyled
+                  key={image.id}
+                  type="image"
+                  name={props.name}
+                  src={image.imgPath}
+                  ref={ref}
+                  value={image.imgPath}
+                  {...props}
+                />
+              ),
+          )}
         </ChangeAvatarBox>
-        <ChangeAvatarButton>Change avatar</ChangeAvatarButton>
+        <ChangeAvatarButton type="button" onClick={openModal}>
+          Change avatar
+        </ChangeAvatarButton>
+        <AvatarModal
+          avatarImages={avatarImages}
+          showModal={showModal}
+          onShowModal={setShowModal}
+          selectedId={selectedId}
+          onSelectedId={setSelectedId}
+          appliedId={appliedId}
+          onApplyId={handleApplyId}
+        />
       </ChangeAvatarWrapper>
       <ValidationError name={props.name} />
     </>

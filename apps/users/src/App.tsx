@@ -1,8 +1,8 @@
 import { Navigation } from '@mentorship/shared/ui';
+import { PageRouter } from '@mentorship/users/router';
 import { BrowserRouter } from 'react-router-dom';
 
 import { BodyContainer, GlobalStyles } from './App.styled';
-import { PageRouter } from './router';
 
 export const App = () => {
   return (

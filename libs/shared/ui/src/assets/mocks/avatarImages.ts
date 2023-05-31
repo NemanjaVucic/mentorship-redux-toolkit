@@ -1,6 +1,11 @@
 import { Avatar1, Avatar2, Avatar3, Avatar4, Avatar5, Avatar6, Avatar7, Avatar8, Avatar9 } from '.';
 
-export const avatarImages = [
+export interface AvatarImages {
+  id: number;
+  imgPath: string;
+}
+
+export const avatarImages: AvatarImages[] = [
   { id: 1, imgPath: Avatar1 },
   { id: 2, imgPath: Avatar2 },
   { id: 3, imgPath: Avatar3 },
