@@ -1,4 +1,4 @@
-import { Color, font, space } from '@mentorship/shared/variables';
+import { Color, font, space } from '@mentorship/shared/constants';
 import styled from 'styled-components';
 
 import { ButtonBaseStyles } from '../button/Button.styled';
