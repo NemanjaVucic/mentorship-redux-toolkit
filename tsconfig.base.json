@@ -30,6 +30,7 @@
       "@mentorship/users/router": ["libs/users/router/src/index.ts"],
       "@mentorship/users/server": ["libs/users/server/src/index.ts"],
       "@mentorship/users/shared/constants": ["libs/users/shared/constants/src/index.ts"],
+      "@mentorship/users/shared/models": ["libs/users/shared/models/src/index.ts"],
       "@mentorship/users/shared/schema": ["libs/users/shared/schema/src/index.ts"]
     }
   },

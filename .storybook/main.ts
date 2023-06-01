@@ -40,6 +40,7 @@ export const rootConfig: StorybookConfig = {
           '@mentorship/users/features': path.resolve('libs', 'users', 'features', 'src'),
           '@mentorship/users/pages': path.resolve('libs', 'users', 'pages', 'src'),
           '@mentorship/users/server': path.resolve('libs', 'users', 'server', 'src'),
+          '@mentorship/users/shared/constants': path.resolve('libs', 'users', 'shared', 'constants', 'src'),
         },
       },
     });

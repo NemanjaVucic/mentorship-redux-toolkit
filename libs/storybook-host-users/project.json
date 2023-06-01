@@ -13,14 +13,6 @@
         "lintFilePatterns": ["libs/storybook-host-users/**/*.{ts,tsx,js,jsx}"]
       }
     },
-    "test": {
-      "executor": "@nx/vite:test",
-      "outputs": ["coverage/libs/storybook-host-users"],
-      "options": {
-        "passWithNoTests": true,
-        "reportsDirectory": "../../coverage/libs/storybook-host-users"
-      }
-    },
     "storybook": {
       "executor": "@nx/storybook:storybook",
       "options": {

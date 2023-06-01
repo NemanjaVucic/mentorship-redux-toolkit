@@ -7,3 +7,5 @@ export const createUserSchema = z.object({
   bio: z.string().optional(),
   avatar: z.string().min(1, 'You need to provide a path image!'),
 });
+
+export type CreateUserRequest = z.infer<typeof createUserSchema>;
