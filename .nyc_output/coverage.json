@@ -1,0 +1,573 @@
+{
+  "C:/Users/NemanjaVucic/projects/mentorship/mentorship-redux-toolkit/libs/shared/constants/src/font.ts": {
+    "path": "C:/Users/NemanjaVucic/projects/mentorship/mentorship-redux-toolkit/libs/shared/constants/src/font.ts",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 1,
+          "column": 20
+        },
+        "end": {
+          "line": 12,
+          "column": null
+        }
+      }
+    },
+    "fnMap": {},
+    "branchMap": {},
+    "s": {
+      "0": 1
+    },
+    "f": {},
+    "b": {}
+  },
+  "C:/Users/NemanjaVucic/projects/mentorship/mentorship-redux-toolkit/libs/shared/constants/src/spacing.ts": {
+    "path": "C:/Users/NemanjaVucic/projects/mentorship/mentorship-redux-toolkit/libs/shared/constants/src/spacing.ts",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 1,
+          "column": 19
+        },
+        "end": {
+          "line": 1,
+          "column": null
+        }
+      },
+      "1": {
+        "start": {
+          "line": 3,
+          "column": 21
+        },
+        "end": {
+          "line": 12,
+          "column": null
+        }
+      }
+    },
+    "fnMap": {},
+    "branchMap": {},
+    "s": {
+      "0": 1,
+      "1": 1
+    },
+    "f": {},
+    "b": {}
+  },
+  "C:/Users/NemanjaVucic/projects/mentorship/mentorship-redux-toolkit/libs/shared/constants/src/color.ts": {
+    "path": "C:/Users/NemanjaVucic/projects/mentorship/mentorship-redux-toolkit/libs/shared/constants/src/color.ts",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 2,
+          "column": 7
+        },
+        "end": {
+          "line": 2,
+          "column": null
+        }
+      },
+      "1": {
+        "start": {
+          "line": 3,
+          "column": 2
+        },
+        "end": {
+          "line": 3,
+          "column": null
+        }
+      },
+      "2": {
+        "start": {
+          "line": 4,
+          "column": 2
+        },
+        "end": {
+          "line": 4,
+          "column": null
+        }
+      },
+      "3": {
+        "start": {
+          "line": 5,
+          "column": 2
+        },
+        "end": {
+          "line": 5,
+          "column": null
+        }
+      },
+      "4": {
+        "start": {
+          "line": 6,
+          "column": 2
+        },
+        "end": {
+          "line": 6,
+          "column": null
+        }
+      },
+      "5": {
+        "start": {
+          "line": 2,
+          "column": 12
+        },
+        "end": {
+          "line": 2,
+          "column": null
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 2,
+            "column": 7
+          },
+          "end": {
+            "line": 2,
+            "column": 12
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 2,
+            "column": 7
+          },
+          "end": {
+            "line": 2,
+            "column": null
+          }
+        }
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": {
+            "line": 2,
+            "column": 12
+          },
+          "end": {
+            "line": 2,
+            "column": null
+          }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 2,
+              "column": 12
+            },
+            "end": {
+              "line": 2,
+              "column": null
+            }
+          },
+          {
+            "start": {
+              "line": 2,
+              "column": 12
+            },
+            "end": {
+              "line": 2,
+              "column": null
+            }
+          }
+        ]
+      }
+    },
+    "s": {
+      "0": 1,
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    },
+    "f": {
+      "0": 1
+    },
+    "b": {
+      "0": [
+        1,
+        1
+      ]
+    }
+  },
+  "C:/Users/NemanjaVucic/projects/mentorship/mentorship-redux-toolkit/libs/shared/ui/src/components/image/Image.styled.tsx": {
+    "path": "C:/Users/NemanjaVucic/projects/mentorship/mentorship-redux-toolkit/libs/shared/ui/src/components/image/Image.styled.tsx",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 6,
+          "column": 7
+        },
+        "end": {
+          "line": 7,
+          "column": null
+        }
+      },
+      "1": {
+        "start": {
+          "line": 14,
+          "column": 7
+        },
+        "end": {
+          "line": 21,
+          "column": null
+        }
+      },
+      "2": {
+        "start": {
+          "line": 18,
+          "column": 29
+        },
+        "end": {
+          "line": 18,
+          "column": 35
+        }
+      },
+      "3": {
+        "start": {
+          "line": 19,
+          "column": 31
+        },
+        "end": {
+          "line": 19,
+          "column": 37
+        }
+      },
+      "4": {
+        "start": {
+          "line": 21,
+          "column": 43
+        },
+        "end": {
+          "line": 21,
+          "column": 49
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 14,
+            "column": 32
+          },
+          "end": {
+            "line": 14,
+            "column": null
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 18,
+            "column": 29
+          },
+          "end": {
+            "line": 18,
+            "column": 35
+          }
+        }
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": {
+            "line": 18,
+            "column": 35
+          },
+          "end": {
+            "line": 18,
+            "column": null
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 19,
+            "column": 31
+          },
+          "end": {
+            "line": 19,
+            "column": 37
+          }
+        }
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": {
+            "line": 19,
+            "column": 37
+          },
+          "end": {
+            "line": 19,
+            "column": null
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 21,
+            "column": 43
+          },
+          "end": {
+            "line": 21,
+            "column": 49
+          }
+        }
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": {
+            "line": 18,
+            "column": 12
+          },
+          "end": {
+            "line": 18,
+            "column": 29
+          }
+        },
+        "type": "default-arg",
+        "locations": [
+          {
+            "start": {
+              "line": 18,
+              "column": 12
+            },
+            "end": {
+              "line": 18,
+              "column": 29
+            }
+          }
+        ]
+      },
+      "1": {
+        "loc": {
+          "start": {
+            "line": 19,
+            "column": 13
+          },
+          "end": {
+            "line": 19,
+            "column": 31
+          }
+        },
+        "type": "default-arg",
+        "locations": [
+          {
+            "start": {
+              "line": 19,
+              "column": 13
+            },
+            "end": {
+              "line": 19,
+              "column": 31
+            }
+          }
+        ]
+      },
+      "2": {
+        "loc": {
+          "start": {
+            "line": 21,
+            "column": 20
+          },
+          "end": {
+            "line": 21,
+            "column": 43
+          }
+        },
+        "type": "default-arg",
+        "locations": [
+          {
+            "start": {
+              "line": 21,
+              "column": 20
+            },
+            "end": {
+              "line": 21,
+              "column": 43
+            }
+          }
+        ]
+      }
+    },
+    "s": {
+      "0": 1,
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1
+    },
+    "f": {
+      "0": 1,
+      "1": 1,
+      "2": 1
+    },
+    "b": {
+      "0": [
+        0
+      ],
+      "1": [
+        0
+      ],
+      "2": [
+        1
+      ]
+    }
+  },
+  "C:/Users/NemanjaVucic/projects/mentorship/mentorship-redux-toolkit/libs/shared/ui/src/components/image/Image.tsx": {
+    "path": "C:/Users/NemanjaVucic/projects/mentorship/mentorship-redux-toolkit/libs/shared/ui/src/components/image/Image.tsx",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 1,
+          "column": 36
+        },
+        "end": {
+          "line": 1,
+          "column": null
+        }
+      },
+      "1": {
+        "start": {
+          "line": 5,
+          "column": 7
+        },
+        "end": {
+          "line": 11,
+          "column": 2
+        }
+      },
+      "2": {
+        "start": {
+          "line": 6,
+          "column": 2
+        },
+        "end": {
+          "line": 7,
+          "column": null
+        }
+      },
+      "3": {
+        "start": {
+          "line": 11,
+          "column": 2
+        },
+        "end": {
+          "line": 11,
+          "column": null
+        }
+      },
+      "4": {
+        "start": {
+          "line": 5,
+          "column": 18
+        },
+        "end": {
+          "line": 5,
+          "column": 22
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 1,
+            "column": 36
+          },
+          "end": {
+            "line": 1,
+            "column": null
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 36
+          },
+          "end": {
+            "line": 1,
+            "column": null
+          }
+        }
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": {
+            "line": 5,
+            "column": 7
+          },
+          "end": {
+            "line": 5,
+            "column": 18
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 5,
+            "column": 70
+          },
+          "end": {
+            "line": 11,
+            "column": 2
+          }
+        }
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 36
+          },
+          "end": {
+            "line": 1,
+            "column": null
+          }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": {
+              "line": 1,
+              "column": 36
+            },
+            "end": {
+              "line": 1,
+              "column": null
+            }
+          }
+        ]
+      }
+    },
+    "s": {
+      "0": 7,
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1
+    },
+    "f": {
+      "0": 1,
+      "1": 1
+    },
+    "b": {
+      "0": [
+        1
+      ]
+    }
+  }
+}

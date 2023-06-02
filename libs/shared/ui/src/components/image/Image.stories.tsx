@@ -17,11 +17,11 @@ export const Default: Story = {
     src: 'https://gravatar.com/avatar/a660965badee47d34bccd6114d24f1ef?s=400&d=robohash&r=x',
     height: 400,
     width: 300,
-    alt: 'A random avatar',
+    alt: 'Random avatar',
   },
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
     const img = await canvas.findByRole('img');
-    await expect(img).toHaveProperty('alt', 'A random avatar');
+    await expect(img).toHaveProperty('alt', 'Random avatar');
   },
 };
