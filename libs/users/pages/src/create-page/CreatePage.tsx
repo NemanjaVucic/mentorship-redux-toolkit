@@ -9,15 +9,18 @@ import { CreateCardButtonWrapper } from './CreatePage.styled';
 
 export const CreatePage = () => {
   const [createUser, result] = useCreateUsersMutation();
+  console.log('CREATE USER: ', createUser);
+  console.log('RESULT: ', result);
   const navigate = useNavigate();
 
   const form = useZodForm({
     schema: createUserSchema,
   });
 
-  const handleCreateUser = async (user: any) => {
-    console.log(user);
+  const handleCreateUser = (user: any) => {
     createUser(user);
+    console.log('USER CREATED: ', user);
+    navigate(RoutePath.home);
   };
 
   return (

@@ -7,7 +7,6 @@ export const Navigation = () => {
     <NavigationContainer>
       <NavLinkStyled to={RoutePath.home}>Home</NavLinkStyled>
       <NavLinkStyled to={RoutePath.createUser}>Create</NavLinkStyled>
-      <NavLinkStyled to={RoutePath.updateUser}>Update</NavLinkStyled>
       <NavLinkStyled to={RoutePath.about}>About</NavLinkStyled>
     </NavigationContainer>
   );
