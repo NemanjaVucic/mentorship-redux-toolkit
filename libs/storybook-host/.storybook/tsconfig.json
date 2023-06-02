@@ -19,6 +19,7 @@
     "../src/**/*.stories.mdx",
     "*.js",
     "./preview.tsx",
-    "./main.ts"
+    "./main.ts",
+    "test-runner.js"
   ]
 }

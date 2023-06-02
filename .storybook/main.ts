@@ -12,6 +12,7 @@ export const rootConfig: StorybookConfig = {
     '@storybook/addon-essentials',
     '@storybook/addon-a11y',
     '@storybook/addon-interactions',
+    '@storybook/addon-coverage',
     '@storybook/addon-links',
     '@storybook/addon-storysource',
     '@storybook/addon-styling',
@@ -35,7 +36,7 @@ export const rootConfig: StorybookConfig = {
         alias: {
           '@mentorship/shared/ui': path.resolve('libs', 'shared', 'ui', 'src'),
           '@mentorship/shared/utils': path.resolve('libs', 'shared', 'utils', 'src'),
-          '@mentorship/shared/variables': path.resolve('libs', 'shared', 'variables', 'src'),
+          '@mentorship/shared/constants': path.resolve('libs', 'shared', 'constants', 'src'),
           '@mentorship/users/data-access': path.resolve('libs', 'users', 'data-access', 'src'),
           '@mentorship/users/features': path.resolve('libs', 'users', 'features', 'src'),
           '@mentorship/users/pages': path.resolve('libs', 'users', 'pages', 'src'),
