@@ -1,6 +1,6 @@
 import { useZodForm } from '@mentorship/shared/hooks';
 import { Form, Input, TextArea, ChangeAvatar, Button } from '@mentorship/shared/ui';
-// import { useCreateUsersMutation } from '@mentorship/users/data-access';
+import { useCreateUsersMutation } from '@mentorship/users/data-access';
 import { RoutePath } from '@mentorship/users/shared/constants';
 import { createUserSchema } from '@mentorship/users/shared/schema';
 import { useNavigate } from 'react-router-dom';
@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom';
 import { CreateCardButtonWrapper } from './CreatePage.styled';
 
 export const CreatePage = () => {
-  // const [createUser, result] = useCreateUsersMutation();
+  const [createUser, result] = useCreateUsersMutation();
   const navigate = useNavigate();
 
   const form = useZodForm({
@@ -16,12 +16,8 @@ export const CreatePage = () => {
   });
 
   const handleCreateUser = async (user: any) => {
-    try {
-      // await createUser(user);
-      navigate(RoutePath.home);
-    } catch (error) {
-      console.log(error);
-    }
+    console.log(user);
+    createUser(user);
   };
 
   return (

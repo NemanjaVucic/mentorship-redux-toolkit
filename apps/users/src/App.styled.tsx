@@ -1,4 +1,4 @@
-import { space } from '@mentorship/shared/variables';
+import { space } from '@mentorship/shared/constants';
 import styled, { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`

@@ -1,4 +1,4 @@
-import { Color } from '@mentorship/shared/variables';
+import { Color } from '@mentorship/shared/constants';
 import styled from 'styled-components';
 
 import { ImageBody } from '../image/Image.styled';

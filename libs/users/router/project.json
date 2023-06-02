@@ -27,14 +27,6 @@
           "mode": "production"
         }
       }
-    },
-    "test": {
-      "executor": "@nx/vite:test",
-      "outputs": ["coverage/libs/users/router"],
-      "options": {
-        "passWithNoTests": true,
-        "reportsDirectory": "../../../coverage/libs/users/router"
-      }
     }
   }
 }

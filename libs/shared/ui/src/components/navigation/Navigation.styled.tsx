@@ -1,4 +1,4 @@
-import { Color, font, space } from '@mentorship/shared/variables';
+import { Color, font, space } from '@mentorship/shared/constants';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
