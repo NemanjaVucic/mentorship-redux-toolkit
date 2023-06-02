@@ -13,12 +13,10 @@
         "lintFilePatterns": ["libs/storybook-host/**/*.{ts,tsx,js,jsx}"]
       }
     },
-    "test": {
-      "executor": "@nx/vite:test",
-      "outputs": ["coverage/libs/storybook-host"],
+    "test-storybook": {
+      "executor": "nx:run-commands",
       "options": {
-        "passWithNoTests": true,
-        "reportsDirectory": "../../coverage/libs/storybook-host"
+        "command": "test-storybook -c libs/storybook-host/.storybook --url=http://localhost:4400 --watch"
       }
     },
     "storybook": {

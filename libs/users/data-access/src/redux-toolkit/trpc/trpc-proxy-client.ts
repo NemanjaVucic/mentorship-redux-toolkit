@@ -1,8 +1,5 @@
 import type { AppRouter } from '@mentorship/users/server';
 import { createTRPCProxyClient, httpBatchLink } from '@trpc/react-query';
-import type { inferProcedureOutput } from '@trpc/server';
-
-export type UserList = inferProcedureOutput<AppRouter['user']['list']>;
 
 export const trpc = createTRPCProxyClient<AppRouter>({
   links: [

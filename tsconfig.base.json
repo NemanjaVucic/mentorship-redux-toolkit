@@ -15,10 +15,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@mentorship/shared/constants": ["libs/shared/constants/src/index.ts"],
       "@mentorship/shared/hooks": ["libs/shared/hooks/src/index.ts"],
       "@mentorship/shared/ui": ["libs/shared/ui/src/index.ts"],
       "@mentorship/shared/utils": ["libs/shared/utils/src/index.ts"],
-      "@mentorship/shared/variables": ["libs/shared/variables/src/index.ts"],
       "@mentorship/storybook-host": ["libs/storybook-host/src/index.ts"],
       "@mentorship/storybook-host-react": ["libs/storybook-host-react/src/index.ts"],
       "@mentorship/storybook-host-shared": ["libs/storybook-host-shared/src/index.ts"],
@@ -30,6 +30,7 @@
       "@mentorship/users/router": ["libs/users/router/src/index.ts"],
       "@mentorship/users/server": ["libs/users/server/src/index.ts"],
       "@mentorship/users/shared/constants": ["libs/users/shared/constants/src/index.ts"],
+      "@mentorship/users/shared/models": ["libs/users/shared/models/src/index.ts"],
       "@mentorship/users/shared/schema": ["libs/users/shared/schema/src/index.ts"]
     }
   },

@@ -1,21 +1,23 @@
-import { User } from '@prisma/client';
+import {
+  UserCreateRequest,
+  UserCreateResponse,
+  UserListRequest,
+  UserListResponse,
+} from '@mentorship/users/shared/models';
 import { createApi } from '@reduxjs/toolkit/query/react';
 
-import { UserList, trpc } from './trpc/trpc-proxy-client';
+import { trpc } from './trpc/trpc-proxy-client';
 
 export const api = createApi({
   baseQuery: (trpcResult: Promise<unknown>) => trpcResult.then((data) => ({ data })).catch((error) => ({ error })),
   endpoints: (builder) => ({
-    getUsers: builder.query<UserList, void>({
+    getUsers: builder.query<UserListResponse, UserListRequest>({
       query: trpc.user.list.query,
     }),
-    // createUsers: builder.mutation<User, User>({
-    //   query: trpc.user.create.mutate,
-    // }),
+    createUsers: builder.mutation<UserCreateResponse, UserCreateRequest>({
+      query: trpc.user.create.mutate,
+    }),
   }),
 });
 
-export const {
-  useGetUsersQuery,
-  //  useCreateUsersMutation
-} = api;
+export const { useGetUsersQuery, useCreateUsersMutation } = api;
