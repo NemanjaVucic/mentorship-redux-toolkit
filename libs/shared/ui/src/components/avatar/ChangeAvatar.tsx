@@ -25,6 +25,7 @@ export const ChangeAvatar = forwardRef<HTMLInputElement, ComponentPropsWithoutRe
   const handleApplyId = (id: number) => {
     setSelectedId(id);
     setAppliedId(id);
+    console.log('ID: ', id);
   };
 
   return (

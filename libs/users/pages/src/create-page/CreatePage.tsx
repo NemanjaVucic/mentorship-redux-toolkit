@@ -1,25 +1,28 @@
 import { useZodForm } from '@mentorship/shared/hooks';
-import { Form, Input, TextArea, ChangeAvatar, Button } from '@mentorship/shared/ui';
+import { Form, Input, TextArea, ChangeAvatar, Button, Loader } from '@mentorship/shared/ui';
 import { useCreateUsersMutation } from '@mentorship/users/data-access';
 import { RoutePath } from '@mentorship/users/shared/constants';
+import { UserCreateRequest } from '@mentorship/users/shared/models';
 import { createUserSchema } from '@mentorship/users/shared/schema';
 import { useNavigate } from 'react-router-dom';
 
-import { CreateCardButtonWrapper } from './CreatePage.styled';
+import { UserFormButtonWrapper } from './CreatePage.styled';
 
 export const CreatePage = () => {
-  const [createUser, result] = useCreateUsersMutation();
-  console.log('CREATE USER: ', createUser);
-  console.log('RESULT: ', result);
+  const [createUser, { isLoading }] = useCreateUsersMutation();
   const navigate = useNavigate();
 
   const form = useZodForm({
     schema: createUserSchema,
   });
 
-  const handleCreateUser = (user: any) => {
+  if (isLoading) {
+    return <Loader />;
+  }
+
+  const handleCreateUser = (user: UserCreateRequest) => {
     createUser(user);
-    console.log('USER CREATED: ', user);
+    console.log('USER Avatar IS CREATED: ', user.avatar);
     navigate(RoutePath.home);
   };
 
@@ -30,9 +33,9 @@ export const CreatePage = () => {
       <Input label="Email" {...form.register('email')} />
       <TextArea label="Bio" {...form.register('bio')} />
       <ChangeAvatar {...form.register('avatar')} />
-      <CreateCardButtonWrapper>
-        <Button>Create Card</Button>
-      </CreateCardButtonWrapper>
+      <UserFormButtonWrapper>
+        <Button>Create User</Button>
+      </UserFormButtonWrapper>
     </Form>
   );
 };
